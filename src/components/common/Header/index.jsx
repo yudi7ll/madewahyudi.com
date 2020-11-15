@@ -19,8 +19,9 @@ function MenuLink({ to }) {
     <Link
       to={ toSlugCase(to) }
       style={{
-        color: '#333',
+        color: 'white',
         fontSize: '.9em',
+        fontWeight: 'bold',
         margin: '0 1.5rem',
         textDecoration: 'none',
         textTransform: 'uppercase',

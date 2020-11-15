@@ -27,21 +27,19 @@ const Layout = ({ children }) => {
   return (
     <>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" /> 
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap" rel="stylesheet" /> 
       <Header />
-      <Container>
-        <main>{children}</main>
+      <main>{children}</main>
 
-        <footer
-          style={{
-            marginTop: `2rem`
-          }}
-        >
-          Copyright© {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://github.com/yudi7ll'">Yudi</a>
-        </footer>
-      </Container>
+      <footer
+        style={{
+          marginTop: `2rem`
+        }}
+      >
+        Copyright© {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://github.com/yudi7ll'">Yudi</a>
+      </footer>
     </>
   )
 }
