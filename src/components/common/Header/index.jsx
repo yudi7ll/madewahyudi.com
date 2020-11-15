@@ -4,7 +4,8 @@ import React from "react";
 import toSlugCase from 'to-slug-case';
 import toTitleCase from 'to-title-case';
 
-import Container from '../Container';
+// common components
+import { Container } from 'components/common';
 
 import {
   Brand,
@@ -20,7 +21,7 @@ function MenuLink({ to }) {
       style={{
         color: '#333',
         fontSize: '.9em',
-        margin: '0 1rem',
+        margin: '0 1.5rem',
         textDecoration: 'none',
         textTransform: 'uppercase',
       }}

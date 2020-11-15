@@ -6,5 +6,6 @@ export const Wrapper = styled.header`
 `;
 
 export const HeaderWrapper = styled.div`
-  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  padding: 2rem 0;
 `;
