@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   background-image: url('${introBg}');
   background-position: center;
   background-size: cover;
-  padding: 10rem 0 4rem 0;
+  padding: 11rem 0;
   position: relative;
   text-align: center;
   z-index: -2;
@@ -27,12 +27,13 @@ export const Heading1 = styled.h1`
   font-family: Anton, sans-serif;
   font-size: 3.5em;
   font-weight: bold;
+  line-height: 120%;
   margin-bottom: 1rem;
 `;
 
 export const Bio = styled.p`
   color: white;
   line-height: 150%;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   max-width: 600px;
 `;

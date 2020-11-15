@@ -29,7 +29,14 @@ const Layout = ({ children }) => {
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap" rel="stylesheet" /> 
       <Header />
-      <main>{children}</main>
+      <main
+        style={{
+          position: 'relative',
+          zIndex: '1'
+        }}
+      >
+        {children}
+      </main>
 
       <footer
         style={{
