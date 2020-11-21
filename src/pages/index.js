@@ -7,6 +7,7 @@ import { Layout, Seo } from "components/common";
 import {
   About,
   Intro,
+  Portfolio,
   Resume,
 } from 'components/landing';
 
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Intro />
     <About />
     <Resume />
+    <Portfolio />
   </Layout>
 );
 

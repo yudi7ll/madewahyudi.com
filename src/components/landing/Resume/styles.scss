@@ -12,9 +12,20 @@
     left: 0;
     right: 0;
   }
+  
+  &::after {
+    border-bottom: 10vh solid $dark;
+    border-right: 99vw solid transparent;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
   &__wrapper {
-    padding-top: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
   }
 
   &__text {
@@ -23,4 +34,8 @@
       font-size: 1.5em;
     }
   }
+}
+
+h3 {
+  font-size: 32px;
 }
