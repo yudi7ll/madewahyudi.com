@@ -8,7 +8,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import './styles.css';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'components/styles/globals.scss';
 
 // Common Components
 import { Header, Container } from "components/common";

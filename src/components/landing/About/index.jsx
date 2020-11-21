@@ -1,35 +1,24 @@
 import React from 'react';
 import RectBg from 'images/rectangle.svg';
-
-// styled components
-import {
-  AboutText,
-  Background,
-  DownloadButton,
-  Heading2,
-  ParagraphText,
-  Trapezoid,
-  Wrapper,
-} from './styles';
+import './styles.scss';
 
 function About() {
   return (
-    <Background>
-      <Trapezoid src={RectBg} />
-      <Wrapper>
-        <div>
-          <Heading2>About Me</Heading2>
-          <ParagraphText>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit a est voluptates inventore repellendus, voluptatum maiores placeat blanditiis magni consequuntur.</ParagraphText>
+    <div className="about">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 offset-lg-3 py-5">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam error similique quaerat distinctio soluta ad exercitationem sed harum facere voluptatum.</p>
+            <h2>Contact Details</h2>
+            <p className="mb-0">I Made Wahyudi</p>
+            <p className="mb-0">Denpasar, 80117</p>
+            <p>madewahyudi22@gmail.com</p>
+            <button className="btn btn-secondary font-weight-bold py-2 px-4">DOWNLOAD RESUME</button>
+          </div>
         </div>
-        <div style={{ marginTop: '1em', marginBottom: '1em' }}>
-          <Heading2>Contact Details</Heading2>
-          <p>I Made Wahyudi</p>
-          <p>Denpasar Indonesia, 80117</p>
-          <p>madewahyudi22@gmail.com</p>
-        </div>
-        <DownloadButton>DOWNLOAD RESUME</DownloadButton>
-      </Wrapper>
-    </Background>
+      </div>
+    </div>
   );
 }
 
