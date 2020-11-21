@@ -11,11 +11,13 @@ import { useStaticQuery, graphql } from "gatsby";
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'components/styles/globals.scss';
+import 'typeface-roboto';
 
 // Common Components
-import { Header, Container } from "components/common";
+import { Header } from "components/common";
 
 const Layout = ({ children }) => {
+  /*
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,6 +27,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  */
 
   return (
     <>

@@ -4,8 +4,6 @@ import React from "react";
 import toSlugCase from 'to-slug-case';
 import toTitleCase from 'to-title-case';
 
-// common components
-import { Container } from 'components/common';
 
 import {
   Brand,
@@ -35,7 +33,7 @@ function MenuLink({ to }) {
 
 function Header() {
   return (
-    <Wrapper as={Container}>
+    <Wrapper>
       <HeaderWrapper>
         <MenuLink to="home" />
         <MenuLink to="about" />

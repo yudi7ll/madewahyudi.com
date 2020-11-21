@@ -1,0 +1,26 @@
+@import 'components/styles/_variable';
+
+.resume {
+  position: relative;
+
+  &::before {
+    border-top: 10vh solid $dark;
+    border-left: 99vw solid transparent;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__wrapper {
+    padding-top: 5rem;
+  }
+
+  &__text {
+
+    &--lg {
+      font-size: 1.5em;
+    }
+  }
+}

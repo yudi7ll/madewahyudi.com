@@ -1,13 +1,13 @@
 import React from "react"
 
 // Common Components
-import { Layout } from "components/common";
-import { Seo } from "components/common";
+import { Layout, Seo } from "components/common";
 
 // Landing Components
 import {
   About,
   Intro,
+  Resume,
 } from 'components/landing';
 
 const IndexPage = () => (
@@ -15,7 +15,8 @@ const IndexPage = () => (
     <Seo title="Yudi" />
     <Intro />
     <About />
+    <Resume />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
