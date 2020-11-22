@@ -5,16 +5,15 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import PropTypes from "prop-types";
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'components/styles/globals.scss';
-import 'typeface-roboto';
+import PropTypes from "prop-types"
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "components/styles/globals.scss";
 
 // Common Components
-import { Header } from "components/common";
+import { Header } from "components/common"
 
 const Layout = ({ children }) => {
   /*
@@ -32,12 +31,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap" rel="stylesheet" /> 
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap"
+        rel="stylesheet"
+      />
       <Header />
       <main
         style={{
-          position: 'relative',
-          zIndex: '1'
+          position: "relative",
+          zIndex: "1",
         }}
       >
         {children}
@@ -45,7 +47,7 @@ const Layout = ({ children }) => {
 
       <footer
         style={{
-          marginTop: `2rem`
+          marginTop: `2rem`,
         }}
       >
         Copyright© {new Date().getFullYear()}, Built with

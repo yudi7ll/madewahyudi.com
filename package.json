@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "yudi",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Web Developer",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Yudi <madewahyudi22@gmail.com>",
+  "homepage": "https://yudi7ll.github.io",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "gatsby": "^2.25.3",
@@ -25,11 +26,10 @@
     "sass": "^1.29.0",
     "styled-components": "^5.2.1",
     "to-slug-case": "^1.0.0",
-    "to-title-case": "^1.0.0",
-    "typeface-roboto": "^1.1.13"
+    "to-title-case": "^1.0.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "prettier": "^2.2.0"
   },
   "keywords": [
     "gatsby"
@@ -42,6 +42,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

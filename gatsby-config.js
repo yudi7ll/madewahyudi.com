@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Web Developer',
-    description: 'Web Developer',
+    title: "Yudi",
+    description: "Web Developer",
     author: `@yudi7ll`,
   },
   plugins: [
@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        implementation: require('sass')
+        implementation: require("sass"),
       },
     },
     {

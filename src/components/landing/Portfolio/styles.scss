@@ -4,6 +4,10 @@
   background-color: $dark;
   color: white;
   padding: 5rem 0 5rem;
+
+  &__img {
+    max-height: 350px;
+  }
 }
 
 h4 {
