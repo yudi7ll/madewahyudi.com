@@ -8,7 +8,7 @@ function Footer() {
       <div className="container">
         <div className="text-center text-white">
           <Sosmed />
-          <div className="mt-4">
+          <div className="mt-5">
             <small>
               <span>&copy; Copyright {(new Date()).getFullYear()}</span>
               <span>. Creator <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer">Yudi</a></span>
