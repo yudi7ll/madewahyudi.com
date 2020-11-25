@@ -26,9 +26,12 @@ function Portfolio() {
     }
   `);
 
-  const PortfolioCard = ({ img, projectName, url, siteUrl }) => (
+  const PortfolioCard = ({ img, projectName, sourceUrl, siteUrl }) => (
     <div className="col-sm-6 col-lg-4 mb-4">
-      <div>
+      <header>
+        <h4>{projectName}</h4>
+      </header>
+      <div className="text-center">
         <a href={siteUrl} target="_blank">
           <Img
             className="portfolio__img"
@@ -38,10 +41,13 @@ function Portfolio() {
           />
         </a>
       </div>
-      <div className="portfolio__link bg-white p-3 border">
-        <a className="text-dark" href={url} target="_blank">
-          <GithubIcon height="2em" width="2em" />
-          &nbsp; {projectName}
+      <div className="portfolio__link bg-white p-3 border d-flex align-items-center justify-content-around">
+        <a className="text-dark" href={siteUrl} target="_blank">
+          <span>Visit</span>
+        </a>
+        <GithubIcon className="text-center" height="2em" width="2em" />
+        <a className="text-dark" href={sourceUrl} target="_blank">
+          <span>Source</span>
         </a>
       </div>
     </div>
@@ -57,25 +63,13 @@ function Portfolio() {
               {
                 projectName: 'Fylo',
                 img: data.fylo.childImageSharp.fluid,
-                url: 'https://github.com/yudi7ll/fylo',
+                sourceUrl: 'https://github.com/yudi7ll/fylo',
                 siteUrl: 'https://yudi7ll.github.io/fylo',
               },
               {
                 projectName: 'Easybank',
                 img: data.easybank.childImageSharp.fluid,
-                url: 'https://github.com/yudi7ll/easybank',
-                siteUrl: 'https://yudi7ll.github.io/easybank',
-              },
-              {
-                projectName: 'Easybank',
-                img: data.easybank.childImageSharp.fluid,
-                url: 'https://github.com/yudi7ll/easybank',
-                siteUrl: 'https://yudi7ll.github.io/easybank',
-              },
-              {
-                projectName: 'Easybank',
-                img: data.easybank.childImageSharp.fluid,
-                url: 'https://github.com/yudi7ll/easybank',
+                sourceUrl: 'https://github.com/yudi7ll/easybank',
                 siteUrl: 'https://yudi7ll.github.io/easybank',
               },
             ].map(props => <PortfolioCard {...props} />)
