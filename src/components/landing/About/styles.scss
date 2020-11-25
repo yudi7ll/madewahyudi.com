@@ -3,4 +3,8 @@
 .about {
   background-color: $dark;
   color: white;
+
+  &__download {
+    background-color: $red;
+  }
 }
