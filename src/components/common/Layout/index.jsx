@@ -9,9 +9,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-// Common Components
-import { Header } from "components/common"
-
 const Layout = ({ children }) => {
   /*
   const data = useStaticQuery(graphql`
@@ -40,25 +37,7 @@ const Layout = ({ children }) => {
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap"
         rel="stylesheet"
       />
-      <Header />
-      <main
-        style={{
-          position: "relative",
-          zIndex: "1",
-        }}
-      >
-        {children}
-      </main>
-
-      <footer
-        style={{
-          marginTop: `2rem`,
-        }}
-      >
-        Copyright© {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://github.com/yudi7ll" target="_blank">Yudi</a>
-      </footer>
+      <main>{children}</main>
     </>
   )
 }

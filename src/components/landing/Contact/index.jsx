@@ -25,7 +25,7 @@ function Contact() {
                 <label htmlFor="message-input">Message</label>
                 <textarea className="form-control" name="message" id="message-input" rows="5"></textarea>
               </div>
-              <button type="submit" className="btn btn-dark py-2 px-3 rounded-0">Send Message</button>
+              <button type="submit" className="btn btn-dark py-2 px-3 rounded-0 font-weight-bold">SEND MESSAGE</button>
             </form>
           </div>
         </div>
