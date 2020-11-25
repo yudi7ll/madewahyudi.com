@@ -1,2 +1,23 @@
 $dark: #011627;
 $red: #E71D36;
+$blue: #2EC4B6;
+
+@mixin bottomTriangle {
+    border-bottom: 10vh solid $dark;
+    border-right: 99vw solid transparent;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin topTriangle {
+    border-top: 10vh solid $dark;
+    border-left: 99vw solid transparent;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}

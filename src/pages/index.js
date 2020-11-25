@@ -4,7 +4,7 @@ import React from "react"
 import { Layout, Seo } from "components/common"
 
 // Landing Components
-import { About, Intro, Portfolio, Resume } from "components/landing"
+import { About, Contact, Intro, Portfolio, Resume } from "components/landing"
 
 // global styles
 import "components/styles/globals.scss";
@@ -16,6 +16,7 @@ const IndexPage = () => (
     <About />
     <Resume />
     <Portfolio />
+    <Contact />
   </Layout>
 )
 

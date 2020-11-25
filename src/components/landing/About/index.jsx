@@ -17,7 +17,7 @@ function About() {
             <p className="mb-0">I Made Wahyudi</p>
             <p className="mb-0">Denpasar, 80117</p>
             <p>madewahyudi22@gmail.com</p>
-            <button className="about__download btn btn-secondary font-weight-bold py-2 px-4 rounded-0">
+            <button className="btn btn-secondary font-weight-bold py-2 px-4 rounded-0">
               DOWNLOAD RESUME
             </button>
           </div>

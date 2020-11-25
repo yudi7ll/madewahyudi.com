@@ -1,3 +1,5 @@
+@import './_variable';
+
 html, body {
   font-family: Roboto, sans-serif;
   font-size: 1.1em;
@@ -14,4 +16,16 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+.btn-dark {
+  background-color: $dark !important;
+  border: none;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: $red !important;
+  border: none !important;
+  color: white !important;
 }

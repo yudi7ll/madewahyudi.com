@@ -50,7 +50,7 @@ function Portfolio() {
   return (
     <div className="portfolio">
       <div className="container">
-        <h4 className="text-center">CHECK OUT MY WORKS</h4>
+        <h2 className="text-center">CHECK OUT MY WORKS</h2>
         <div className="row mt-5">
           {
             [
