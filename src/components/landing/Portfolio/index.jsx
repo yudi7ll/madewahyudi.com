@@ -27,7 +27,7 @@ function Portfolio() {
   `);
 
   const PortfolioCard = ({ img, projectName, sourceUrl, siteUrl }) => (
-    <div className="col-sm-6 col-lg-4 mb-4" id="portfolio">
+    <div className="col-sm-6 col-lg-4 mb-4">
       <header>
         <h4>{projectName}</h4>
       </header>
@@ -54,7 +54,7 @@ function Portfolio() {
   );
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
       <div className="container">
         <h2 className="text-center">CHECK OUT MY WORKS</h2>
         <div className="row mt-5">
