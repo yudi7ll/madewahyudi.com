@@ -18,7 +18,7 @@ function RenderSosmed({ Icon, to }) {
         marginRight: ".8em",
       }}
       target="_blank"
-      rel="norefferer"
+      rel="noreferrer"
     >
       <Icon fill="#fff" height="40px" width="40px" />
     </a>
