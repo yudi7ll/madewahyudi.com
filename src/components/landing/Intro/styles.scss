@@ -1,14 +1,9 @@
 @import 'components/styles/_variable';
 
 .intro {
-  pointer-events: none;
   position: relative;
 
   &::after {
     @include bottomTriangle;
-  }
-
-  &__sosmed {
-    pointer-events: all;
   }
 }

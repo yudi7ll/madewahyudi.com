@@ -1,8 +1,4 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useRef, useEffect } from "react"
-import toSlugCase from "to-slug-case"
-import toTitleCase from "to-title-case"
 
 import "./styles.scss";
 

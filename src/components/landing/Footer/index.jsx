@@ -11,7 +11,7 @@ function Footer() {
           <div className="mt-5">
             <small>
               <span>&copy; Copyright {(new Date()).getFullYear()}</span>
-              <span>. Creator <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer">Yudi</a></span>
+              <span>. Created by <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer">Yudi</a></span>
               </small>
           </div>
         </div>
