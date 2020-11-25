@@ -3,7 +3,7 @@ import "./styles.scss"
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="container">
         <div className="row py-5">
           <div className="col-lg-6 offset-lg-3 py-5">

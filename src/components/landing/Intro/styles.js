@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   background-image: url("${introBg}");
   background-position: center;
   background-size: cover;
+  min-height: 300px;
   padding: 11rem 0;
   position: relative;
   text-align: center;

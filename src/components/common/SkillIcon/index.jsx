@@ -34,21 +34,21 @@ function SkillIcon() {
 
   return (
     <div className="col-lg-10 px-0 mt-2">
-      <RenderIcon
-        Icon={JavascriptIcon}
-        style={{ backgroundColor: "#F7DF1E" }}
-      />
-      <RenderIcon Icon={PhpIcon} />
-      <RenderIcon Icon={ReactIcon} />
-      <RenderIcon Icon={ReduxIcon} />
-      <RenderIcon Icon={LaravelIcon} />
-      <RenderIcon Icon={NextIcon} />
-      <RenderIcon Icon={GatsbyIcon} />
-      <RenderIcon Icon={GitIcon} />
-      <RenderIcon Icon={VimIcon} />
-      <RenderIcon Icon={FirefoxIcon} />
-      <RenderIcon Icon={WordpressIcon} />
-      <RenderIcon Icon={FigmaIcon} />
+      {
+        [
+          { Icon: JavascriptIcon, style: { backgroundColor: "#F7DF1E" } },
+          { Icon: PhpIcon },
+          { Icon: ReactIcon },
+          { Icon: ReduxIcon },
+          { Icon: LaravelIcon },
+          { Icon: NextIcon },
+          { Icon: GatsbyIcon },
+          { Icon: GitIcon },
+          { Icon: VimIcon },
+          { Icon: FirefoxIcon },
+          { Icon: WordpressIcon },
+        ].map(RenderIcon)
+      }
     </div>
   );
 }

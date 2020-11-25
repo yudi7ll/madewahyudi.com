@@ -4,7 +4,7 @@ import "./styles.scss"
 
 function Resume() {
   return (
-    <div className="resume">
+    <div className="resume" id="resume">
       <div className="resume__wrapper container">
         <div className="row">
           <div className="col-lg-4">

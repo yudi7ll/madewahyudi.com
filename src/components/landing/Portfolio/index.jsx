@@ -27,12 +27,12 @@ function Portfolio() {
   `);
 
   const PortfolioCard = ({ img, projectName, sourceUrl, siteUrl }) => (
-    <div className="col-sm-6 col-lg-4 mb-4">
+    <div className="col-sm-6 col-lg-4 mb-4" id="portfolio">
       <header>
         <h4>{projectName}</h4>
       </header>
       <div className="text-center">
-        <a href={siteUrl} target="_blank">
+        <a href={siteUrl} target="_blank" rel="noreferrer">
           <Img
             className="portfolio__img"
             loading="lazy"
@@ -42,11 +42,11 @@ function Portfolio() {
         </a>
       </div>
       <div className="portfolio__link bg-white p-3 border d-flex align-items-center justify-content-around">
-        <a className="text-dark" href={siteUrl} target="_blank">
+        <a className="text-dark" href={siteUrl} target="_blank" rel="noreferrer">
           <span>Visit</span>
         </a>
         <GithubIcon className="text-center" height="2em" width="2em" />
-        <a className="text-dark" href={sourceUrl} target="_blank">
+        <a className="text-dark" href={sourceUrl} target="_blank" rel="noreferrer">
           <span>Source</span>
         </a>
       </div>
@@ -62,9 +62,9 @@ function Portfolio() {
             [
               {
                 projectName: 'Fylo',
-                img: data.fylo.childImageSharp.fluid,
-                sourceUrl: 'https://github.com/yudi7ll/fylo',
-                siteUrl: 'https://yudi7ll.github.io/fylo',
+                  img: data.fylo.childImageSharp.fluid,
+                  sourceUrl: 'https://github.com/yudi7ll/fylo',
+                  siteUrl: 'https://yudi7ll.github.io/fylo',
               },
               {
                 projectName: 'Easybank',
