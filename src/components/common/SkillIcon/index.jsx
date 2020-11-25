@@ -47,6 +47,7 @@ function SkillIcon() {
           { Icon: VimIcon },
           { Icon: FirefoxIcon },
           { Icon: WordpressIcon },
+          { Icon: FigmaIcon },
         ].map(RenderIcon)
       }
     </div>

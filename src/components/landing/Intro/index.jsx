@@ -7,7 +7,7 @@ import { Bio, Heading1, Wrapper } from "./styles"
 
 function Intro() {
   return (
-    <Wrapper className="intro" id="intro">
+    <Wrapper className="intro" id="home">
       <div className="container">
         <Heading1>Hello!, I'm Yudi</Heading1>
         <Bio>

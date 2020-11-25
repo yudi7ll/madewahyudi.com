@@ -19,7 +19,12 @@ function Header() {
 
   const MenuLink = to => (
     <li className="nav-item mx-3" key={to}>
-      <a className="navbar__link nav-link font-weight-bold text-uppercase" href={'#' + to}>{to}</a>
+      <a
+        className="navbar__link nav-link font-weight-bold text-uppercase"
+        href={'#' + to}
+      >
+        {to}
+      </a>
     </li>
   );
 
