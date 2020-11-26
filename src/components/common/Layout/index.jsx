@@ -19,6 +19,19 @@ const Layout = ({ children }) => {
         rel="stylesheet"
       />
       <main style={{ position: 'relative', zIndex: 1 }}>{children}</main>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5C5GJ1V6Z"></script>
+      <div dangerouslySetInnerHTML={{
+        __html: `
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-X5C5GJ1V6Z');
+        </script>
+        `
+      }}></div>
     </>
   )
 }
