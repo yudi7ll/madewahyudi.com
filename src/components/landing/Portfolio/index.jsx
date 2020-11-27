@@ -28,8 +28,8 @@ function Portfolio() {
 
   const PortfolioCard = ({ img, projectName, sourceUrl, siteUrl }) => (
     <div className="col-sm-6 col-lg-4 mb-4" key={projectName}>
-      <header>
-        <h4>{projectName}</h4>
+      <header className="bg-light px-4 py-3 border-bottom">
+        <h5 className="text-dark text-center my-0">{projectName}</h5>
       </header>
       <div className="text-center">
         <a href={siteUrl} target="_blank" rel="noreferrer">

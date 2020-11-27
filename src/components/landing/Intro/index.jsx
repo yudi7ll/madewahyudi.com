@@ -9,7 +9,7 @@ function Intro() {
   return (
     <Wrapper className="intro" id="home">
       <div className="container">
-        <Heading1>Hi!, I'm Yudi</Heading1>
+        <Heading1>Hi!, I'm <span className="intro--yellow">Yudi</span></Heading1>
         <Bio>
           I’m a Web Developer from Bali Indonesia. Here I’ll make a website for
           you whether if it’s a Company Profile, Personal Website, Blog, Online

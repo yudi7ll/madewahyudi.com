@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   padding: 11rem 0;
   position: relative;
   text-align: center;
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
   z-index: -2;
 
   &:before {
@@ -37,4 +38,5 @@ export const Bio = styled.p`
   line-height: 150%;
   margin: 0 auto 1rem;
   max-width: 600px;
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
 `

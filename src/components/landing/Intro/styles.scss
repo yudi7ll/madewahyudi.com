@@ -6,4 +6,8 @@
   &::after {
     @include bottomTriangle;
   }
+
+  &--yellow {
+    color: $yellow;
+  }
 }
