@@ -26,6 +26,7 @@ function SkillIcon() {
           ...style,
           overflow: "hidden",
         }}
+        key={Icon}
       >
         <Icon height="50px" width="50px" />
       </div>

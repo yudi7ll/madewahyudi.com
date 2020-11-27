@@ -18,7 +18,7 @@ function Contact() {
               </div>
               <div className="form-group">
                 <label htmlFor="email-input">Email address</label>
-                <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" required />
+                <input type="email" className="form-control" id="email-input" aria-describedby="emailHelp" required />
                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div className="form-group">

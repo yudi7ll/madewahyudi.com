@@ -1,10 +1,14 @@
 import React from "react"
+import ReactGA from 'react-ga';
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+ReactGA.initialize('G-X5C5GJ1V6Z', { debug: true });
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, favicon } = useStaticQuery(
     graphql`
       query {
         site {
@@ -12,6 +16,14 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+          }
+        }
+
+        favicon: file(relativePath: { eq: "favicon.png" }) {
+          childImageSharp {
+            original {
+              src
+            }
           }
         }
       }
@@ -36,6 +48,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:image`,
+          content: favicon.childImageSharp.original.src || ``,
         },
         {
           property: `og:description`,

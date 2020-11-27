@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <nav
-      class="navbar navbar-expand-md navbar-dark fixed-top mt-5"
+      className="navbar navbar-expand-md navbar-dark fixed-top mt-5"
       ref={nav}
     >
       <button

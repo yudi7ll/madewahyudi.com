@@ -19,6 +19,7 @@ function RenderSosmed({ Icon, to }) {
       }}
       target="_blank"
       rel="noreferrer"
+      key={to}
     >
       <Icon fill="#fff" height="40px" width="40px" />
     </a>
