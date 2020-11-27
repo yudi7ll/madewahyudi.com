@@ -1,6 +1,17 @@
 .navbar {
   transition: .4s;
 
+  &-dark {
+    .navbar__link {
+      color: white !important;
+
+      &:hover {
+        opacity: .5;
+        transition: .2s;
+      }
+    }
+  }
+
   &__link {
     font-size: .8em;
   }

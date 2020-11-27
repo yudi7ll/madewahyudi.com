@@ -1,18 +1,16 @@
-import React, { useRef, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 
 import "./styles.scss";
 
 function Header() {
-  const nav = useRef(null);
+  const [shrink, setShrink] = useState(false);
 
   useEffect(() => {
     window.onscroll = () => {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        nav.current.classList.add('navbar-light', 'bg-light');
-        nav.current.classList.remove('mt-5', 'navbar-dark')
+        setShrink(true);
       } else {
-        nav.current.classList.remove('bg-light', 'navbar-light');
-        nav.current.classList.add('mt-5', 'navbar-dark');
+        setShrink(false);
       }
     }
   }, []);
@@ -28,11 +26,8 @@ function Header() {
     </li>
   );
 
-  return (
-    <nav
-      className="navbar navbar-expand-md navbar-dark fixed-top mt-5"
-      ref={nav}
-    >
+  const ShrinkMenu = props => (
+    <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top" {...props}>
       <button
         className="navbar-toggler ml-auto"
         type="button"
@@ -50,6 +45,38 @@ function Header() {
         </ul>
       </div>
     </nav>
+  );
+
+  const BasicMenu = props => (
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top mt-5" {...props}>
+      <button
+        className="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#header"
+        aria-controls="header"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="header">
+        <ul className="navbar-nav mx-auto">
+          { ['home', 'about', 'resume', 'portfolio', 'contact'].map(MenuLink) }
+        </ul>
+      </div>
+    </nav>
+  );
+
+  return (
+    <>
+      <div className="d-md-none">
+        <ShrinkMenu />
+      </div>
+      <div className="d-none d-md-block">
+        {  shrink ? <ShrinkMenu /> : <BasicMenu />  }
+      </div>
+    </>
   );
 }
 
