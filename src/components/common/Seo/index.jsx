@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-ReactGA.initialize('G-X5C5GJ1V6Z', { debug: true });
+ReactGA.initialize('G-X5C5GJ1V6Z');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function SEO({ description, lang, meta, title }) {
