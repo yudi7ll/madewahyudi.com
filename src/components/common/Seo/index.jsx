@@ -1,13 +1,15 @@
-import React from "react"
+import React, { useEffect } from "react"
 import ReactGA from 'react-ga';
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-ReactGA.initialize('G-X5C5GJ1V6Z');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 function SEO({ description, lang, meta, title }) {
+  useEffect(() => {
+    ReactGA.initialize('G-X5C5GJ1V6Z');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   const { site, favicon } = useStaticQuery(
     graphql`
       query {
