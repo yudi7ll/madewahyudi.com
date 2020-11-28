@@ -1,3 +1,4 @@
+import FaviconImage from 'images/favicon.png';
 import React, { useEffect } from "react"
 import ReactGA from 'react-ga';
 import PropTypes from "prop-types"
@@ -10,7 +11,7 @@ function SEO({ description, lang, meta, title }) {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
-  const { site, favicon } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -18,14 +19,6 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-          }
-        }
-
-        favicon: file(relativePath: { eq: "favicon.png" }) {
-          childImageSharp {
-            original {
-              src
-            }
           }
         }
       }
@@ -53,7 +46,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: favicon.childImageSharp.original.src || ``,
+          content: FaviconImage,
         },
         {
           property: `og:description`,

@@ -1,22 +1,8 @@
-import Img from 'gatsby-image';
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { Sosmed } from 'components/common';
 import './styles.scss';
 
 function Intro() {
-  const data = useStaticQuery(graphql`
-    query {
-      introBg: file(relativePath: { eq: "intro.jpg" }) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
-
   return (
     <div id="home" className="intro">
       <div className="container">
