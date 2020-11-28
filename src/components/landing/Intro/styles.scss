@@ -1,7 +1,26 @@
 @import 'components/styles/_variable';
 
 .intro {
+  background-image: url('../../../images/intro.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  padding: 11rem 0;
   position: relative;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0,0,0,.4);
+  z-index: -2;
+
+  &:before {
+    background-color: rgba(0, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
 
   &::after {
     @include bottomTriangle;
@@ -9,5 +28,22 @@
 
   &--yellow {
     color: $yellow;
+  }
+
+  &__heading1 {
+    color: white;
+    font-family: Anton, sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: white;
+    line-height: 150%;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,.4);
   }
 }

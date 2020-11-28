@@ -62,9 +62,9 @@ function Portfolio() {
             [
               {
                 projectName: 'Fylo',
-                  img: data.fylo.childImageSharp.fluid,
-                  sourceUrl: 'https://github.com/yudi7ll/fylo',
-                  siteUrl: 'https://yudi7ll.github.io/fylo',
+                img: data.fylo.childImageSharp.fluid,
+                sourceUrl: 'https://github.com/yudi7ll/fylo',
+                siteUrl: 'https://yudi7ll.github.io/fylo',
               },
               {
                 projectName: 'Easybank',
@@ -72,7 +72,7 @@ function Portfolio() {
                 sourceUrl: 'https://github.com/yudi7ll/easybank',
                 siteUrl: 'https://yudi7ll.github.io/easybank',
               },
-            ].map(props => <PortfolioCard {...props} />)
+            ].map(PortfolioCard)
           }
         </div>
       </div>

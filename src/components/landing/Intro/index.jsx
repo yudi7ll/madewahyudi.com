@@ -1,26 +1,39 @@
-import React from "react"
+import Img from 'gatsby-image';
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Sosmed } from 'components/common';
-import "./styles.scss"
-
-// styled components
-import { Bio, Heading1, Wrapper } from "./styles"
+import './styles.scss';
 
 function Intro() {
+  const data = useStaticQuery(graphql`
+    query {
+      introBg: file(relativePath: { eq: "intro.jpg" }) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
-    <Wrapper className="intro" id="home">
+    <div id="home" className="intro">
       <div className="container">
-        <Heading1>Hi!, I'm <span className="intro--yellow">Yudi</span></Heading1>
-        <Bio>
+        <h1 className="intro__heading1">
+          Hi!, I'm <span className="intro--yellow">Yudi</span>
+        </h1>
+        <p className="intro__description">
           I’m a Web Developer from Bali Indonesia. Here I’ll make a website for
-          you whether if it’s a Company Profile, Personal Website, Blog, Online
+          you whether if it’s a Company Profile, Personal Website, Online
           Store etc.
-        </Bio>
+        </p>
         <div className="intro__sosmed mt-4">
           <Sosmed />
         </div>
       </div>
-    </Wrapper>
+    </div>
   )
 }
 
-export default Intro
+export default Intro;
