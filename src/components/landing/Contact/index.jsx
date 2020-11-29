@@ -1,5 +1,5 @@
 import iziToast from 'izitoast';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import 'izitoast/dist/css/iziToast.min.css';
 import './styles.scss';
 
@@ -10,6 +10,7 @@ function Contact() {
     message = useRef(''),
     subject = useRef('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isMessageSent, setIsMessageSent] = useState(false);
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -44,11 +45,19 @@ function Contact() {
     const res = await fetch(url, options)
     console.log(await res.json());
     setIsLoading(false);
-    iziToast.success({
+    setIsMessageSent(true);
+  }
+
+  useEffect(() => {
+    if (isMessageSent) {
+      iziToast.success({
         title: 'Pesan anda telah terkirim!',
         message: 'Terimakasih'
-    });
-  }
+      });
+    }
+
+    setIsMessageSent(false);
+  }, [isMessageSent]);
 
   return (
     <div className="contact" id="contact">
