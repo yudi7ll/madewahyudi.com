@@ -9,5 +9,6 @@
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
+import 'izitoast';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'components/styles/globals.scss';

@@ -27,7 +27,7 @@ function Header() {
   );
 
   const ShrinkMenu = props => (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top" {...props}>
+    <nav className="navbar navbar-expand-md navbar-dark bg-blue fixed-top" {...props}>
       <button
         className="navbar-toggler ml-auto"
         type="button"

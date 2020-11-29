@@ -1,3 +1,5 @@
+@import 'components/styles/_variable';
+
 .navbar {
   transition: .4s;
 
@@ -15,4 +17,9 @@
   &__link {
     font-size: .8em;
   }
+}
+
+.bg-blue {
+  background-color: $dark;
+  box-shadow: 0px 0px 6px rgba(255,255,255,.1);
 }
