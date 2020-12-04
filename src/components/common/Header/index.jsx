@@ -7,7 +7,7 @@ function Header() {
 
   useEffect(() => {
     window.onscroll = () => {
-      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         setShrink(true);
       } else {
         setShrink(false);
@@ -26,29 +26,16 @@ function Header() {
     </li>
   );
 
-  const ShrinkMenu = props => (
-    <nav className="navbar navbar-expand-md navbar-dark bg-blue fixed-top" {...props}>
-      <button
-        className="navbar-toggler ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#header"
-        aria-controls="header"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="header">
-        <ul className="navbar-nav mx-auto">
-          { ['home', 'about', 'resume', 'portfolio', 'contact'].map(MenuLink) }
-        </ul>
-      </div>
-    </nav>
-  );
-
   const BasicMenu = props => (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top mt-5" {...props}>
+    <nav
+      className={[
+        "navbar navbar-expand-md navbar-dark fixed-top",
+        shrink
+          ? "navbar__shrink bg-blue"
+          : "pt-md-4"
+      ].join(' ')}
+      {...props}
+    >
       <button
         className="navbar-toggler ml-auto"
         type="button"
@@ -62,21 +49,14 @@ function Header() {
       </button>
       <div className="collapse navbar-collapse" id="header">
         <ul className="navbar-nav mx-auto">
-          { ['home', 'about', 'resume', 'portfolio', 'contact'].map(MenuLink) }
+          { ['yudi', 'portfolio', 'tools', 'contact'].map(MenuLink) }
         </ul>
       </div>
     </nav>
   );
 
   return (
-    <>
-      <div className="d-md-none">
-        <ShrinkMenu />
-      </div>
-      <div className="d-none d-md-block">
-        {  shrink ? <ShrinkMenu /> : <BasicMenu />  }
-      </div>
-    </>
+    <BasicMenu />
   );
 }
 

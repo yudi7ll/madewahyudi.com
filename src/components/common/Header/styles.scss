@@ -1,7 +1,12 @@
 @import 'components/styles/_variable';
 
 .navbar {
-  transition: .4s;
+  transition: .2s;
+
+  @media only screen and (max-width: 767px) {
+    background-color: $dark;
+    box-shadow: 0px 0px 6px rgba(255,255,255,.1);
+  }
 
   &-dark {
     .navbar__link {
@@ -10,6 +15,19 @@
       &:hover {
         opacity: .5;
         transition: .2s;
+      }
+    }
+  }
+
+  &__shrink {
+    @media only screen and (min-width: 768px) {
+      animation: navbar-shrink .2s;
+
+      @keyframes navbar-shrink {
+        from {
+          background-color: transparent;
+          padding-top: 1.5rem;
+        }
       }
     }
   }

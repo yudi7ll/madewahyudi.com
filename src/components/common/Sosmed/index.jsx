@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.scss';
 
 import {
   WhatsappIcon,
@@ -21,14 +22,14 @@ function RenderSosmed({ Icon, to }) {
       rel="noreferrer"
       key={to}
     >
-      <Icon fill="#fff" height="40px" width="40px" />
+      <Icon className="icon" fill="#fff" height="40px" width="40px" />
     </a>
   );
 }
 
 export default () => [
   {
-    to: 'https://wa.me/628819140763',
+    to: 'https://wa.me/6288219140763',
     Icon: WhatsappIcon
   },
   {

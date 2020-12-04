@@ -5,12 +5,10 @@ import { Header, Layout, Seo } from "components/common"
 
 // Landing Components
 import {
-  About,
   Contact,
   Footer,
   Intro,
   Portfolio,
-  Resume,
 } from "components/landing"
 
 // global styles
@@ -21,8 +19,6 @@ const IndexPage = () => (
     <Seo title="Yudi" />
     <Header />
     <Intro />
-    <About />
-    <Resume />
     <Portfolio />
     <Contact />
     <Footer />

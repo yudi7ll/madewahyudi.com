@@ -12,7 +12,14 @@ const Layout = ({ children }) => {
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap"
         rel="stylesheet"
       />
-        <main style={{ position: 'relative', zIndex: 1 }}>{children}</main>
+      <main
+        style={{
+          position: 'relative',
+          zIndex: 1
+        }}
+      >
+        {children}
+      </main>
       </>
   )
 }
