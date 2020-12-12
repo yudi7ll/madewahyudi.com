@@ -29,3 +29,13 @@ a {
   border: none !important;
   color: white !important;
 }
+
+.text {
+  &--dark { color: $dark; }
+  &--yellow { color: $yellow; }
+  &--blue { color: $blue; }
+}
+
+.bg {
+  &--dark { background-color: $dark; }
+}

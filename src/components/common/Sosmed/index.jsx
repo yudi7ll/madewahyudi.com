@@ -12,7 +12,7 @@ import {
 function RenderSosmed({ Icon, to }) {
   return (
     <a
-      className="mx-2"
+      className="mr-3"
       href={to}
       style={{
         display: "inline-block",

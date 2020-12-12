@@ -41,13 +41,13 @@ function Portfolio() {
   ].map(PortfolioCard);
 
   return (
-    <div className="portfolio mt-5" id="portfolio">
+    <div className="portfolio" id="portfolio">
       <div className="container">
-        <h2 className="portfolio__title text-uppercase text-center">
+        <h2 className="portfolio__title text-uppercase text-center mb-4">
           check out my <span className="portfolio--yellow">works</span>
         </h2>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6">
             <PortfolioLists />
           </div>
         </div>

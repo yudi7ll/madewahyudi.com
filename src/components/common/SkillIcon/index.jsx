@@ -9,6 +9,7 @@ import {
   JavascriptIcon,
   LaravelIcon,
   NextIcon,
+  NodejsIcon,
   PhpIcon,
   ReactIcon,
   ReduxIcon,
@@ -16,25 +17,26 @@ import {
   VimIcon,
 } from "components/icons"
 
-function SkillIcon() {
+function SkillIcon(props) {
 
   const RenderIcon = ({ Icon, style = {} }) => {
     return (
       <div
-        className="d-inline-block rounded-circle border shadow-sm p-2 m-2"
+        className="d-inline-block rounded-circle border shadow p-2 m-2"
         style={{
-          ...style,
+          backgroundColor: '#f2f2f2',
           overflow: "hidden",
+          ...style,
         }}
         key={Icon}
       >
-        <Icon height="50px" width="50px" />
+        <Icon height="45px" width="45px" />
       </div>
     )
   }
 
   return (
-    <div className="col-lg-10 px-0 mt-2">
+    <div {...props}>
       {
         [
           { Icon: JavascriptIcon, style: { backgroundColor: "#F7DF1E" } },
@@ -42,6 +44,7 @@ function SkillIcon() {
           { Icon: ReactIcon },
           { Icon: ReduxIcon },
           { Icon: LaravelIcon },
+          { Icon: NodejsIcon },
           { Icon: NextIcon },
           { Icon: GatsbyIcon },
           { Icon: GitIcon },
