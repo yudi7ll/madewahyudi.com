@@ -39,7 +39,7 @@ function ContactForm() {
     };
 
     e.target.reset();
-    const res = await fetch(url, options)
+    await fetch(url, options)
     alert('Your message has been sent!');
     setIsLoading(false);
   }
@@ -54,7 +54,7 @@ function ContactForm() {
         <div className="form-group">
           <label htmlFor="name-input">Full Name</label>
           <input
-            className="form-control"
+            className="form-control rounded-0"
             disabled={isLoading}
             id="name-input"
             placeholder="Real Name"
@@ -67,7 +67,7 @@ function ContactForm() {
           <label htmlFor="email-input">Email address</label>
           <input
             aria-describedby="emailHelp"
-            className="form-control"
+            className="form-control rounded-0"
             disabled={isLoading}
             id="email-input"
             placeholder="Your Email"
@@ -80,7 +80,7 @@ function ContactForm() {
         <div className="form-group">
           <label htmlFor="message-input">Message</label>
           <textarea
-            className="form-control"
+            className="form-control rounded-0"
             disabled={isLoading}
             id="message-input"
             placeholder="Say hi..."
@@ -89,7 +89,7 @@ function ContactForm() {
             rows="5"
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-outline-info py-2 px-3 rounded-0 font-weight-bold">
+        <button type="submit" className="btn btn-dark py-2 px-3 rounded-0 font-weight-bold rounded-0">
           { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
         </button>
       </form>
