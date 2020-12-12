@@ -1,0 +1,8 @@
+@import 'components/styles/_variable';
+
+main {
+  background-color: $dark;
+  color: white;
+  position: relative;
+  z-index: 1;
+}

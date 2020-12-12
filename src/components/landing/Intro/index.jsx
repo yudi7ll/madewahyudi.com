@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sosmed } from 'components/common';
-import { IntroBg } from 'components/icons';
+import { IntroBg } from 'components/svg';
 import './styles.scss';
 
 function Intro() {

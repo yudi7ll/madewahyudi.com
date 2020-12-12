@@ -8,6 +8,7 @@ import {
   Contact,
   Footer,
   Intro,
+  MyTools,
   Portfolio,
 } from "components/landing"
 
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Header />
     <Intro />
     <Portfolio />
+    <MyTools />
     <Contact />
     <Footer />
   </Layout>

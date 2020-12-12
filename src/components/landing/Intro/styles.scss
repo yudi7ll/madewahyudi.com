@@ -1,12 +1,12 @@
 @import 'components/styles/_variable';
 
 .intro {
-  background-color: $dark;
   background-image: linear-gradient($purple, $dark);
   background-position: center;
   background-size: cover;
   min-height: 300px;
   padding: 6rem 0;
+  position: relative;
 
   &--yellow {
     color: $yellow;
