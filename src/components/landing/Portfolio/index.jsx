@@ -8,7 +8,14 @@ import { GithubIcon } from 'components/icons';
 function Portfolio() {
   const images = useStaticQuery(graphql`
     query {
-      fylo: file(relativePath: {eq: "portfolio/fylo.png"}, absolutePath: {}) {
+      Fylo: file(relativePath: {eq: "portfolio/fylo.png"}, absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      Easybank: file(relativePath: {eq: "portfolio/easybank.png"}, absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
@@ -19,15 +26,23 @@ function Portfolio() {
   `);
 
   const PortfolioCard = ({ title, pageUrl, sourceUrl }, i) => (
-    <div className="portfolio__card border" key={i}>
-      <h4 className="portfolio__head py-2 border-bottom">{title}</h4>
-      <a href={pageUrl} target="_blank" rel="noreferrer">
-        <Img className="portfolio__img" fluid={images.fylo.childImageSharp.fluid} alt={title} />
-      </a>
-      <div className="d-flex align-items-center justify-content-around py-3 border-top">
-        <a className="text-white" href={pageUrl} target="_blank" rel="noreferrer">Visit</a>
-        <GithubIcon height="38px" width="38px" fill="#fff" />
-        <a className="text-white" href={sourceUrl} target="_blank" rel="noreferrer">Source</a>
+    <div className="col-lg-4 col-md-6 mt-4">
+      <div className="portfolio__card border" key={i}>
+        <h5 className="portfolio__head py-3 border-bottom">{title}</h5>
+        <a className="portfolio__img-link" href={pageUrl} target="_blank" rel="noreferrer">
+          <Img className="portfolio__img" fluid={images[title].childImageSharp.fluid} alt={title} />
+        </a>
+        <div className="portfolio__action d-flex align-items-center p-3 border-top text-center">
+          <div className="col-4">
+            <a className="text-white portfolio__link" href={pageUrl} target="_blank" rel="noreferrer">Visit</a>
+          </div>
+          <div className="col-4">
+            <GithubIcon height="38px" width="38px" fill="#fff" />
+          </div>
+          <div className="col-4">
+            <a className="text-white portfolio__link" href={sourceUrl} target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -37,19 +52,22 @@ function Portfolio() {
       title: 'Fylo',
       sourceUrl: 'https://github.com/yudi7ll/fylo',
       pageUrl: 'https://yudi7ll.github.io/fylo'
+    },
+    {
+      title: 'Easybank',
+      sourceUrl: 'https://github.com/yudi7ll/easybank',
+      pageUrl: 'https://yudi7ll.github.io/easybank'
     }
   ].map(PortfolioCard);
 
   return (
     <div className="portfolio" id="portfolio">
       <div className="container">
-        <h2 className="text__header text-center mb-4">
+        <h2 className="text__header text-center">
           check out my <span className="portfolio--yellow">works</span>
         </h2>
         <div className="row">
-          <div className="col-lg-4 col-md-6">
-            <PortfolioLists />
-          </div>
+          <PortfolioLists />
         </div>
       </div>
     </div>

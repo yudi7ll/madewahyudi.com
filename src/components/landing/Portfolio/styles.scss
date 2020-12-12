@@ -12,14 +12,20 @@
     display: block;
     margin: 0;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__img {
-    height: 350px;
-    object-position: top;
+    height: 300px;
+    transition: .3s;
 
-    &:hover img {
-      object-position: bottom;
+    &:hover {
+      filter: grayscale(1);
     }
+  }
+
+  &__link:hover {
+    opacity: .4;
+    transition: .2s;
   }
 }
