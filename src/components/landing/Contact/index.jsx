@@ -89,7 +89,7 @@ function ContactForm() {
             rows="5"
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-dark py-2 px-3 rounded-0 font-weight-bold rounded-0">
+        <button type="submit" className="btn btn-dark border py-2 px-3 rounded-0 font-weight-bold rounded-0">
           { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
         </button>
       </form>
