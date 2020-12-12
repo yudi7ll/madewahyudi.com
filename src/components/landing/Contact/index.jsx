@@ -46,10 +46,7 @@ function ContactForm() {
 
   return (
     <>
-      <header className="text-center">
-        <h2 className="text__header">Contact</h2>
-        <p>Like my work? please let me know.</p>
-      </header>
+      <p className="contact__header">Like my work? please let me know.</p>
       <form onSubmit={submitHandler}>
         <div className="form-group">
           <label htmlFor="name-input">Full Name</label>
