@@ -270,3 +270,60 @@ export function ContactIllustration(props) {
     </svg>
   )
 }
+
+export function BottomBg(props) {
+  return (
+    <svg
+      width={1440}
+      height={1955}
+      viewBox="0 0 1440 1955"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <mask
+        id="prefix__a"
+        maskUnits="userSpaceOnUse"
+        x={-97}
+        y={0}
+        width={1589}
+        height={2043}
+      >
+        <path
+          d="M78 315.5C28 127.9-96.596 78.5-97 0l10.5 2042.5H1458l34-433c-2.67-26.17-18.4-129.1-60-331.5-52-253-618.5-315.5-921-428S140.5 550 78 315.5z"
+          fill="url(#prefix__paint0_linear)"
+        />
+      </mask>
+      <g mask="url(#prefix__a)">
+        <path
+          fill="url(#prefix__paint1_linear)"
+          d="M2.5 156.5h1440v1832H2.5z"
+        />
+      </g>
+      <defs>
+        <linearGradient
+          id="prefix__paint0_linear"
+          x1={697.5}
+          y1={0}
+          x2={697.5}
+          y2={2042.5}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#011627" />
+          <stop offset={1} stopColor="#321D48" />
+        </linearGradient>
+        <linearGradient
+          id="prefix__paint1_linear"
+          x1={722.5}
+          y1={156.5}
+          x2={722.5}
+          y2={1988.5}
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#011627" />
+          <stop offset={1} stopColor="#321D48" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}

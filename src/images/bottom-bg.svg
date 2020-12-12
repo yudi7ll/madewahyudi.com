@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1440"
+   height="2043"
+   viewBox="0 0 1440 2043"
+   fill="none"
+   version="1.1"
+   id="svg21"
+   sodipodi:docname="bottom-bg.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="714"
+     id="namedview23"
+     showgrid="false"
+     inkscape:zoom="0.27459618"
+     inkscape:cx="720"
+     inkscape:cy="1312.8369"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg21" />
+  <mask
+     id="mask0"
+     mask-type="alpha"
+     maskUnits="userSpaceOnUse"
+     x="-100"
+     y="0"
+     width="1589"
+     height="2043">
+    <path
+       d="M75 315.5C25 127.9 -99.5965 78.5 -100 0L-89.5 2042.5H1455L1489 1609.5C1486.33 1583.33 1470.6 1480.4 1429 1278C1377 1025 810.5 962.5 508 850C205.5 737.5 137.5 550 75 315.5Z"
+       fill="url(#paint0_linear)"
+       id="path2" />
+  </mask>
+  <g
+     mask="url(#mask0)"
+     id="g7"
+     transform="translate(3.5977013,65.955671)">
+    <path
+       d="m -0.5,156.5 h 1440 v 1832 H -0.5 Z"
+       fill="url(#paint1_linear)"
+       id="path5"
+       style="fill:url(#paint1_linear)" />
+  </g>
+  <defs
+     id="defs19">
+    <linearGradient
+       id="paint0_linear"
+       x1="694.5"
+       y1="0"
+       x2="694.5"
+       y2="2042.5"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#011627"
+         id="stop9" />
+      <stop
+         offset="1"
+         stop-color="#321D48"
+         id="stop11" />
+    </linearGradient>
+    <linearGradient
+       id="paint1_linear"
+       x1="719.5"
+       y1="156.5"
+       x2="719.5"
+       y2="1988.5"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#011627"
+         id="stop14" />
+      <stop
+         offset="1"
+         stop-color="#321D48"
+         id="stop16" />
+    </linearGradient>
+  </defs>
+</svg>

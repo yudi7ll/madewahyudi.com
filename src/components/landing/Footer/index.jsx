@@ -1,19 +1,15 @@
 import React from 'react';
-import { Sosmed } from 'components/common';
 import './styles.scss';
 
 function Footer() {
   return (
-    <footer className="footer pt-5 pb-3">
+    <footer className="footer">
       <div className="container">
-        <div className="text-center text-white">
-          <Sosmed />
-          <div className="mt-5">
-            <small>
-              <span>&copy; Copyright {(new Date()).getFullYear()}</span>
-              <span>. Created by <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer">Yudi</a></span>
-              </small>
-          </div>
+        <div className="text-center text-white py-4">
+          <small>
+            <span>&copy; Copyright {(new Date()).getFullYear()}</span>
+            <span>. Created by <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer">Yudi</a></span>
+          </small>
         </div>
       </div>
     </footer>

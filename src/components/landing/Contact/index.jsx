@@ -6,8 +6,7 @@ function ContactForm() {
   let url = 'https://api.sendinblue.com/v3/smtp/email';
   let name = useRef(''),
     email = useRef(''),
-    message = useRef(''),
-    subject = useRef('');
+    message = useRef('');
   const [isLoading, setIsLoading] = useState(false);
 
   const submitHandler = async (e) => {
@@ -41,7 +40,7 @@ function ContactForm() {
 
     e.target.reset();
     const res = await fetch(url, options)
-    console.log(await res.json());
+    alert('Your message has been sent!');
     setIsLoading(false);
   }
 

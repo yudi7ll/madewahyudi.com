@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         rel="stylesheet"
       />
       <main>{children}</main>
-      </>
+    </>
   )
 }
 
