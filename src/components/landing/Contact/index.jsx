@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { ContactIllustration } from 'components/svg';
 import './styles.scss';
 
-function Contact() {
+function ContactForm() {
   let url = 'https://api.sendinblue.com/v3/smtp/email';
   let name = useRef(''),
     email = useRef(''),
@@ -18,7 +19,7 @@ function Contact() {
         name: name.current.value,
         email: email.current.value,
       },
-      subject: subject.current.value,
+      subject: 'New message from ' + document.location.host,
       htmlContent: message.current.value,
       to: [
         {
@@ -45,65 +46,68 @@ function Contact() {
   }
 
   return (
+    <>
+      <header className="text-center">
+        <h2>Contact</h2>
+        <p>Like my work? please let me know.</p>
+      </header>
+      <form onSubmit={submitHandler}>
+        <div className="form-group">
+          <label htmlFor="name-input">Full Name</label>
+          <input
+            className="form-control"
+            disabled={isLoading}
+            id="name-input"
+            placeholder="Real Name"
+            ref={name}
+            type="text"
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email-input">Email address</label>
+          <input
+            aria-describedby="emailHelp"
+            className="form-control"
+            disabled={isLoading}
+            id="email-input"
+            placeholder="Your Email"
+            ref={email}
+            required
+            type="email"
+          />
+          <small id="emailHelp" className="form-text text-muted">I'll never share your email with anyone else.</small>
+        </div>
+        <div className="form-group">
+          <label htmlFor="message-input">Message</label>
+          <textarea
+            className="form-control"
+            disabled={isLoading}
+            id="message-input"
+            placeholder="Say hi..."
+            ref={message}
+            required
+            rows="5"
+          ></textarea>
+        </div>
+        <button type="submit" className="btn btn-outline-info py-2 px-3 rounded-0 font-weight-bold">
+          { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
+        </button>
+      </form>
+    </>
+  );
+}
+
+function Contact() {
+  return (
     <div className="contact" id="contact">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6 offset-lg-3">
-            <header className="text-center">
-              <h2>Contact</h2>
-              <p>Like my work? please let me know.</p>
-            </header>
-            <form onSubmit={submitHandler}>
-              <div className="form-group">
-                <label htmlFor="name-input">Name</label>
-                <input
-                  className="form-control"
-                  disabled={isLoading}
-                  id="name-input"
-                  ref={name}
-                  type="text"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="subject-input">Subject</label>
-                <input
-                  className="form-control"
-                  disabled={isLoading}
-                  id="subject-input"
-                  ref={subject}
-                  required
-                  type="text"
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email-input">Email address</label>
-                <input
-                  aria-describedby="emailHelp"
-                  className="form-control"
-                  disabled={isLoading}
-                  id="email-input"
-                  ref={email}
-                  required
-                  type="email"
-                />
-                <small id="emailHelp" className="form-text text-muted">I'll never share your email with anyone else.</small>
-              </div>
-              <div className="form-group">
-                <label htmlFor="message-input">Message</label>
-                <textarea
-                  className="form-control"
-                  disabled={isLoading}
-                  id="message-input"
-                  ref={message}
-                  required
-                  rows="5"
-                ></textarea>
-              </div>
-              <button type="submit" className="btn btn-dark py-2 px-3 rounded-0 font-weight-bold">
-                { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
-              </button>
-            </form>
+        <div className="row align-items-center">
+          <div className="col-lg-5">
+            <ContactForm />
+          </div>
+          <div className="col-lg-7">
+            <ContactIllustration className="w-100" />
           </div>
         </div>
       </div>

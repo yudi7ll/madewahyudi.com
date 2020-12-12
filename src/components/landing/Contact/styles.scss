@@ -1,14 +1,5 @@
 @import 'components/styles/_variable';
 
 .contact {
-  padding: 5rem 0;
-  position: relative;
-
-  &::before {
-    @include topTriangle;
-  }
-
-  &::after {
-    @include bottomTriangle;
-  }
+  margin-top: 5em;
 }
