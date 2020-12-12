@@ -13,7 +13,7 @@ function MyTools() {
             <MyToolsIllustration className="w-100" />
           </div>
           <div className="col-lg-5">
-            <h2 className="mytools__header text-center">
+            <h2 className="text__header text-center">
               the <span className="text--yellow">tools</span> that i use
             </h2>
             <SkillIcon className="text-center" />

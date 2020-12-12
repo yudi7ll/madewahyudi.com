@@ -47,7 +47,7 @@ function ContactForm() {
   return (
     <>
       <header className="text-center">
-        <h2>Contact</h2>
+        <h2 className="text__header">Contact</h2>
         <p>Like my work? please let me know.</p>
       </header>
       <form onSubmit={submitHandler}>

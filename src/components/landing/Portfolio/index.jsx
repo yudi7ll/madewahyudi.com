@@ -43,7 +43,7 @@ function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
       <div className="container">
-        <h2 className="portfolio__title text-uppercase text-center mb-4">
+        <h2 className="text__header text-center mb-4">
           check out my <span className="portfolio--yellow">works</span>
         </h2>
         <div className="row">

@@ -34,6 +34,11 @@ a {
   &--dark { color: $dark; }
   &--yellow { color: $yellow; }
   &--blue { color: $blue; }
+
+  &__header { 
+    font-size: 40px;
+    text-transform: uppercase;
+  }
 }
 
 .bg {
