@@ -2,6 +2,7 @@ import React from 'react';
 
 // Icons
 import {
+  LinuxIcon,
   FigmaIcon,
   FirefoxIcon,
   GatsbyIcon,
@@ -15,7 +16,7 @@ import {
   ReduxIcon,
   WordpressIcon,
   VimIcon,
-} from "components/icons"
+} from "components/icons";
 
 function SkillIcon(props) {
 
@@ -39,6 +40,7 @@ function SkillIcon(props) {
     <div {...props}>
       {
         [
+          { Icon: LinuxIcon },
           { Icon: JavascriptIcon, style: { backgroundColor: "#F7DF1E" } },
           { Icon: PhpIcon },
           { Icon: ReactIcon },
