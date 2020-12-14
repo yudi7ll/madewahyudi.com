@@ -37,7 +37,7 @@ export default () => [
     Icon: GithubIcon
   },
   {
-    to: 'https://instagram.com/yudi_ll',
+    to: 'https://instagram.com/yudi7ll',
     Icon: InstagramIcon,
   },
   {
