@@ -11,11 +11,6 @@
   &-dark {
     .navbar__link {
       color: white !important;
-
-      &:hover {
-        opacity: .5;
-        transition: .2s;
-      }
     }
   }
 
@@ -34,6 +29,19 @@
 
   &__link {
     font-size: .8em;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover a {
+      border-bottom: 2px solid $yellow;
+    }
+  }
+
+  &--active {
+    color: $yellow;
+    border-bottom: 2px solid $yellow;
+
+    &:hover { color: $yellow; }
   }
 }
 

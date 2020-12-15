@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import React, { useState, useEffect } from "react"
 
 import "./styles.scss";
@@ -17,11 +18,8 @@ function Header() {
 
   const MenuLink = to => (
     <li className="nav-item mx-3" key={to}>
-      <a
-        className="navbar__link nav-link font-weight-bold text-uppercase"
-        href={'#' + to}
-      >
-        {to}
+      <a className="navbar__link nav-link font-weight-bold text-uppercase">
+        <Link activeClass={'navbar--active'} to={to} spy={true} smooth={true}>{to}</Link>
       </a>
     </li>
   );

@@ -1,11 +1,21 @@
 import React from 'react';
-import { Sosmed } from 'components/common';
 import { IntroBg } from 'components/svg';
+import { motion } from 'framer-motion';
+import { Sosmed } from 'components/common';
 import './styles.scss';
 
 function Intro() {
   return (
-    <div id="yudi" className="intro">
+    <motion.div
+      className="intro"
+      id="yudi"
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-5 pt-0 pt-lg-5">
@@ -29,7 +39,7 @@ function Intro() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
