@@ -1,5 +1,6 @@
 import React from 'react';
 import { IntroBg } from 'components/svg';
+import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { Sosmed } from 'components/common';
 import './styles.scss';
@@ -31,7 +32,11 @@ function Intro() {
               <Sosmed />
             </div>
             <div className="intro__portfolio-btn">
-              <button className="btn btn-outline-light rounded-0 mt-4 px-5 py-2">Portfolio</button>
+              <button className="btn btn-outline-light rounded-0 mt-4 px-5 py-2">
+                <Link to="portfolio" smooth={true}>
+                  Portfolio
+                </Link>
+              </button>
             </div>
           </div>
           <div className="col-lg-7 d-none d-lg-block">
