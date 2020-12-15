@@ -7,8 +7,8 @@ function Footer() {
       <div className="container">
         <div className="text-center text-white py-4">
           <small>
-            <span>&copy; Copyright {(new Date()).getFullYear()}</span>
-            <span>. Created by <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer">Yudi</a></span>
+            <span>&copy; Copyright {(new Date()).getFullYear()}.</span>
+            <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer"> Yudi</a>
           </small>
         </div>
       </div>
