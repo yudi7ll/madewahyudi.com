@@ -7,7 +7,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
   useEffect(() => {
-    ReactGA.initialize('G-X5C5GJ1V6Z');
+    ReactGA.initialize('G-LNZQGS8EKR');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
