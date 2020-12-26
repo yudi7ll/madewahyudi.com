@@ -26,8 +26,8 @@ function Portfolio() {
   `);
 
   const PortfolioCard = ({ title, pageUrl, sourceUrl }, i) => (
-    <div className="col-lg-4 col-md-6 mt-4">
-      <div className="portfolio__card border" key={i}>
+    <div className="col-lg-4 col-md-6 mt-4" key={i}>
+      <div className="portfolio__card border">
         <h5 className="portfolio__head py-3 border-bottom">{title}</h5>
         <a className="portfolio__img-link" href={pageUrl} target="_blank" rel="noreferrer">
           <Img className="portfolio__img" fluid={images[title].childImageSharp.fluid} alt={title} />

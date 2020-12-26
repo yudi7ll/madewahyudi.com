@@ -1,16 +1,10 @@
 import FaviconImage from 'images/favicon.png';
-import React, { useEffect } from "react"
-import ReactGA from 'react-ga';
+import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  useEffect(() => {
-    ReactGA.initialize('G-LNZQGS8EKR');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-
   const { site } = useStaticQuery(
     graphql`
       query {
