@@ -28,4 +28,8 @@
     color: white;
     transition: .2s;
   }
+
+  &:disabled {
+    background-color: $dark;
+  }
 }

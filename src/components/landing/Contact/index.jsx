@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { ContactIllustration } from 'components/svg';
 import './styles.scss';
 
@@ -82,7 +82,7 @@ function ContactForm() {
             rows="5"
           ></textarea>
         </div>
-        <button type="submit" className="btn bg--accent text-white py-2 px-3 rounded-0 font-weight-bold rounded-0">
+        <button type="submit" className="btn bg--purple text-white py-2 px-3 rounded-0 font-weight-bold rounded-0">
           { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
         </button>
       </form>
