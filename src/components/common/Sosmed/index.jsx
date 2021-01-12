@@ -45,7 +45,7 @@ export default () => [
     Icon: TwitterIcon,
   },
   {
-    to: 'https://facebook.com/yudi1ll',
+    to: 'https://facebook.com/yudi7ll',
     Icon: FacebookIcon
   }
 ].map(RenderSosmed);

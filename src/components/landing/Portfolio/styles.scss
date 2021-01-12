@@ -3,10 +3,6 @@
 .portfolio {
   padding-top: 5em;
 
-  &--yellow {
-    color: $yellow;
-  }
-
   &__head {
     background-image: linear-gradient(to right, $purple, #26024C);
     display: block;

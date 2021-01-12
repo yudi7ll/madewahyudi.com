@@ -18,9 +18,15 @@ function Header() {
 
   const MenuLink = to => (
     <li className="nav-item mx-3" key={to}>
-      <a className="navbar__link nav-link font-weight-bold text-uppercase">
-        <Link activeClass={'navbar--active'} to={to} spy={true} smooth={true}>{to}</Link>
-      </a>
+        <Link
+          className="navbar__link nav-link font-weight-bold text-uppercase"
+          activeClass={'navbar--active'}
+          to={to}
+          spy={true}
+          smooth={true}
+        >
+          <a>{to}</a>
+        </Link>
     </li>
   );
 

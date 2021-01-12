@@ -1,6 +1,6 @@
 import Img from 'gatsby-image';
 import React from 'react';
-import { useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import './styles.scss';
 
 import { GithubIcon } from 'components/icons';
@@ -64,7 +64,7 @@ function Portfolio() {
     <div className="portfolio" id="portfolio">
       <div className="container">
         <h2 className="text__header text-center">
-          check out my <span className="portfolio--yellow">works</span>
+          check out my <span className="color--accent">works</span>
         </h2>
         <div className="row">
           <PortfolioLists />

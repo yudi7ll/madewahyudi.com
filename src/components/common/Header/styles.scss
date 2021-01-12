@@ -33,15 +33,17 @@
     transition: .2s;
 
     &:hover a {
-      border-bottom: 2px solid $yellow;
+      border-bottom: 2px solid $accent;
     }
   }
 
   &--active {
-    color: $yellow;
-    border-bottom: 2px solid $yellow;
+    &:hover { color: $accent; }
 
-    &:hover { color: $yellow; }
+    a {
+      color: $accent !important;
+      border-bottom: 2px solid $accent;
+    }
   }
 }
 

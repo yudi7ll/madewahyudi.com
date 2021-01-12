@@ -20,8 +20,9 @@ function Intro() {
       <div className="container">
         <div className="row">
           <div className="col-lg-5 pt-0 pt-lg-5">
+            <p class="mb-1">Hi, my name is</p>
             <h1 className="intro__heading1">
-              Hi!, I'm <span className="intro--yellow">Yudi</span>
+              I MADE WAH<span className="color--accent">YUDI</span>
             </h1>
             <p className="intro__description">
               I’m a Web Developer from Bali Indonesia. Here I’ll make a website for

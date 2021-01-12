@@ -35,7 +35,7 @@ a {
   &--yellow { color: $yellow; }
   &--blue { color: $blue; }
 
-  &__header { 
+  &__header {
     font-size: 40px;
     text-transform: uppercase;
   }
@@ -43,4 +43,8 @@ a {
 
 .bg {
   &--dark { background-color: $dark; }
+}
+
+.color {
+  &--accent { color: $accent }
 }
