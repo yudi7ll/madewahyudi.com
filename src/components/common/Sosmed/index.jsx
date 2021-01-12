@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 
 import {
-  WhatsappIcon,
+  TelegramIcon,
   GithubIcon,
   InstagramIcon,
   TwitterIcon,
@@ -29,8 +29,8 @@ function RenderSosmed({ Icon, to }) {
 
 export default () => [
   {
-    to: 'https://wa.me/6288219140763',
-    Icon: WhatsappIcon
+    to: 'https://t.me/mbeerrr',
+    Icon: TelegramIcon
   },
   {
     to: 'https://github.com/yudi7ll',
