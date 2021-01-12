@@ -17,7 +17,10 @@ function Header() {
   }, []);
 
   const MenuLink = to => (
-    <li className="nav-item mx-3" key={to}>
+    <li
+      className={['nav-item mx-3', to == 'yudi' && 'd-none d-md-block'].join(' ')}
+      key={to}
+    >
         <Link
           className="navbar__link nav-link font-weight-bold text-uppercase"
           activeClass={'navbar--active'}
@@ -34,12 +37,13 @@ function Header() {
     <nav
       className={[
         "navbar navbar-expand-md navbar-dark fixed-top",
-        shrink
-          ? "navbar__shrink bg-blue"
-          : "pt-md-4"
+        shrink ? "navbar__shrink bg-blue" : "pt-md-4"
       ].join(' ')}
       {...props}
     >
+      <Link className="navbar-brand d-md-none">
+        <h4 className="m-0 color--accent">YUDI</h4>
+      </Link>
       <button
         className="navbar-toggler ml-auto"
         type="button"
