@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll';
 import React, { useState, useEffect } from "react"
+import $ from 'jquery';
 
 import "./styles.scss";
 
@@ -16,22 +17,30 @@ function Header() {
     }
   }, []);
 
-  const MenuLink = to => (
-    <li
-      className={['nav-item mx-3', to == 'yudi' && 'd-none d-md-block'].join(' ')}
-      key={to}
-    >
+  const MenuLink = to => {
+
+    const hideMenu = () => {
+      $('.navbar-collapse').collapse('hide');
+    }
+
+    return (
+      <li
+        className={'nav-item mx-3'}
+        key={to}
+      >
         <Link
           className="navbar__link nav-link font-weight-bold text-uppercase"
           activeClass={'navbar--active'}
           to={to}
           spy={true}
           smooth={true}
+          onClick={hideMenu}
         >
           <a>{to}</a>
         </Link>
-    </li>
-  );
+      </li>
+    );
+  };
 
   const BasicMenu = props => (
     <nav
@@ -41,9 +50,6 @@ function Header() {
       ].join(' ')}
       {...props}
     >
-      <Link className="navbar-brand d-md-none">
-        <h4 className="m-0 color--accent">YUDI</h4>
-      </Link>
       <button
         className="navbar-toggler ml-auto"
         type="button"
