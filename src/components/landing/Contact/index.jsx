@@ -49,33 +49,29 @@ function ContactForm() {
       <p className="contact__header">Like my work? please let me know.</p>
       <form onSubmit={submitHandler}>
         <div className="form-group">
-          <label htmlFor="name-input">Full Name</label>
           <input
             className="form-control rounded-0"
             disabled={isLoading}
             id="name-input"
-            placeholder="Real Name"
+            placeholder="Full Name"
             ref={name}
             type="text"
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="email-input">Email address</label>
           <input
             aria-describedby="emailHelp"
             className="form-control rounded-0"
             disabled={isLoading}
             id="email-input"
-            placeholder="Your Email"
+            placeholder="Email"
             ref={email}
             required
             type="email"
           />
-          <small id="emailHelp" className="form-text text-muted">I'll never share your email with anyone else.</small>
         </div>
         <div className="form-group">
-          <label htmlFor="message-input">Message</label>
           <textarea
             className="form-control rounded-0"
             disabled={isLoading}
@@ -86,7 +82,7 @@ function ContactForm() {
             rows="5"
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-dark border py-2 px-3 rounded-0 font-weight-bold rounded-0">
+        <button type="submit" className="btn bg--accent text-white py-2 px-3 rounded-0 font-weight-bold rounded-0">
           { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
         </button>
       </form>

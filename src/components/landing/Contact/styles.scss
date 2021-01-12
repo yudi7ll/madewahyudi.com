@@ -9,3 +9,23 @@
     font-weight: bold;
   }
 }
+
+.form-control,
+.btn {
+  border-radius: 5px !important;
+}
+
+.form-control {
+  background-color: #2D2647;
+  border: none;
+  color: white;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(0,0,0,.1);
+
+  &:focus {
+    background-color: #4A3B80;
+    box-shadow: none;
+    color: white;
+    transition: .2s;
+  }
+}
