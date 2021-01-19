@@ -48,5 +48,6 @@ a {
 }
 
 .color {
-  &--accent { color: $accent }
+  &--accent { color: $accent; }
+  &--red { color: $red; }
 }
