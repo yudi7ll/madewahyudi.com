@@ -22,6 +22,13 @@ function Portfolio() {
           }
         }
       }
+      TodoApp: file(relativePath: {eq: "portfolio/todo-app-main.png"}, absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -30,7 +37,7 @@ function Portfolio() {
       <div className="portfolio__card border">
         <h3 className="portfolio__head py-3 border-bottom">{title}</h3>
         <a className="portfolio__img-link" href={pageUrl} target="_blank" rel="noreferrer">
-          <Img className="portfolio__img" fluid={images[title].childImageSharp.fluid} alt={title} />
+          <Img className="portfolio__img" fluid={images[title.replace(/ /g, '')].childImageSharp.fluid} alt={title} />
         </a>
         <div className="portfolio__action d-flex align-items-center p-3 border-top text-center">
           <div className="col-4">
@@ -57,6 +64,11 @@ function Portfolio() {
       title: 'Easybank',
       sourceUrl: 'https://github.com/yudi7ll/easybank',
       pageUrl: 'https://yudi7ll.github.io/easybank'
+    },
+    {
+      title: 'Todo App',
+      sourceUrl: 'https://github.com/yudi7ll/todo-app-main',
+      pageUrl: 'https://yudi7ll.github.io/todo-app-main'
     }
   ].map(PortfolioCard);
 
