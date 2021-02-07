@@ -25,9 +25,7 @@ function Intro() {
               I MADE WAH<span className="color--accent">YUDI</span>
             </h1>
             <p className="intro__description">
-              I’m a Web Developer from Bali Indonesia. Here I’ll make a website for
-              you whether if it’s a Company Profile, Personal Website, Online
-              Store etc.
+              I'm a web developer specialized in both <strong>front-end</strong> and <strong>back-end</strong>.
             </p>
             <div className="intro__sosmed mt-4">
               <Sosmed />
