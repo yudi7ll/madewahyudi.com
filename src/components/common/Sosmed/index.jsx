@@ -12,17 +12,13 @@ import {
 function RenderSosmed({ Icon, to }) {
   return (
     <a
-      className="mr-3"
+      className="sosmed"
       href={to}
-      style={{
-        display: "inline-block",
-        marginRight: ".8em",
-      }}
       target="_blank"
       rel="noreferrer"
       key={to}
     >
-      <Icon className="icon" fill="#fff" height="40px" width="40px" />
+      <Icon className="sosmed__icon" fill="#fff" height="40px" width="40px" />
     </a>
   );
 }

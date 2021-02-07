@@ -1,7 +1,12 @@
-.icon {
-  transition: .3s;
+.sosmed {
+  display: inline-block;
+  margin: 0 .8rem .8rem 0;
 
-  &:hover {
-    transform: scale(1.2) rotate(-360deg);
+  &__icon {
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.2) rotate(-360deg);
+    }
   }
 }
