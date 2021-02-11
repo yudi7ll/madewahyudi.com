@@ -8,21 +8,21 @@ import { GithubIcon } from 'components/icons';
 function Portfolio() {
   const images = useStaticQuery(graphql`
     query {
-      Fylo: file(relativePath: {eq: "portfolio/fylo.png"}, absolutePath: {}) {
+      Fylo: file(relativePath: {eq: "portfolio/fylo.jpg"}, absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      Easybank: file(relativePath: {eq: "portfolio/easybank.png"}, absolutePath: {}) {
+      Easybank: file(relativePath: {eq: "portfolio/easybank.jpg"}, absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      TodoApp: file(relativePath: {eq: "portfolio/todo-app-main.png"}, absolutePath: {}) {
+      TodoApp: file(relativePath: {eq: "portfolio/todo-app-main.jpg"}, absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
