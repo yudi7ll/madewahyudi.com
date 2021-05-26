@@ -29,13 +29,19 @@ module.exports = {
         start_url: '/',
         background_color: '#011627',
         theme_color: '#011627',
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/favicon.png',
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+        precachePages: ['/*'],
+        workboxConfig: {
+          importWorkboxFrom: `cdn`
+        }
+      }
+    },
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
