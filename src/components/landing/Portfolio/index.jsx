@@ -1,5 +1,6 @@
 import Img from 'gatsby-image';
 import React from 'react';
+import pt from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
 import './styles.scss';
 
@@ -53,6 +54,12 @@ function Portfolio() {
       </div>
     </div>
   );
+
+  PortfolioCard.propTypes = {
+    title: pt.string.isRequired,
+    pageUrl: pt.string.isRequired,
+    sourceUrl: pt.string.isRequired,
+  }
 
   const PortfolioLists = () => [
     {

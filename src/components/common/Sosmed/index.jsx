@@ -1,4 +1,5 @@
 import React from 'react';
+import pt from 'prop-types';
 import './styles.scss';
 
 import {
@@ -6,7 +7,7 @@ import {
   GithubIcon,
   InstagramIcon,
   TwitterIcon,
-  FacebookIcon,
+  LinkedInIcon,
 } from 'components/icons';
 
 function RenderSosmed({ Icon, to }) {
@@ -23,14 +24,19 @@ function RenderSosmed({ Icon, to }) {
   );
 }
 
+RenderSosmed.propTypes = {
+  Icon: pt.instanceOf(Object).isRequired,
+  to: pt.string.isRequired,
+};
+
 export default () => [
   {
     to: 'https://t.me/mbeerrr',
-    Icon: TelegramIcon
+    Icon: TelegramIcon,
   },
   {
     to: 'https://github.com/yudi7ll',
-    Icon: GithubIcon
+    Icon: GithubIcon,
   },
   {
     to: 'https://instagram.com/yudi7ll',
@@ -41,7 +47,7 @@ export default () => [
     Icon: TwitterIcon,
   },
   {
-    to: 'https://facebook.com/yudi7ll',
-    Icon: FacebookIcon
-  }
+    to: 'https://www.linkedin.com/in/yudi-07b131138',
+    Icon: LinkedInIcon,
+  },
 ].map(RenderSosmed);

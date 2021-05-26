@@ -20,12 +20,12 @@ function Intro() {
       <div className="container">
         <div className="row">
           <div className="col-lg-5 pt-0 pt-lg-5">
-            <p class="mb-1">Hi, my name is</p>
+            <p className="mb-1">Hi, my name is</p>
             <h1 className="intro__heading1">
               I MADE WAH<span className="color--accent">YUDI</span>
             </h1>
             <p className="intro__description">
-              I'm a web developer specialized in both <strong>front-end</strong> and <strong>back-end</strong>.
+              I&apos;m a web developer specialized in both <strong>front-end</strong> and <strong>back-end</strong>.
             </p>
             <div className="intro__sosmed mt-4">
               <Sosmed />

@@ -1,4 +1,5 @@
 import React from 'react';
+import pt from 'prop-types';
 
 // Icons
 import {
@@ -35,6 +36,12 @@ function SkillIcon(props) {
       </div>
     )
   }
+
+  RenderIcon.propTypes = {
+    Icon: pt.instanceOf(Object).isRequired,
+    style: pt.instanceOf(Object)
+  }
+
 
   return (
     <div {...props}>
