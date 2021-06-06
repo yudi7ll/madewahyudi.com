@@ -2,14 +2,13 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import './styles.scss'
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
 
   return (
     <>
       {/* fonts */}
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
-        async
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap"
         rel="stylesheet"
       />

@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
 } from 'components/icons';
 
-function RenderSosmed({ Icon, to }) {
+function RenderSosmed ({Icon, to}) {
   return (
     <a
       className="sosmed"
@@ -18,6 +18,7 @@ function RenderSosmed({ Icon, to }) {
       target="_blank"
       rel="noreferrer"
       key={to}
+      title={to}
     >
       <Icon className="sosmed__icon" fill="#fff" height="40px" width="40px" />
     </a>

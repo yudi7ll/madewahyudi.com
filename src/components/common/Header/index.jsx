@@ -1,10 +1,10 @@
-import { Link } from 'react-scroll';
-import React, { useState, useEffect } from 'react';
+import {Link} from 'react-scroll';
+import React, {useState, useEffect} from 'react';
 import $ from 'jquery';
 
 import "./styles.scss";
 
-function Header() {
+function Header () {
   const [shrink, setShrink] = useState(false);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function Header() {
           smooth={true}
           onClick={hideMenu}
         >
-          <a>{to}</a>
+          <a className="text-white" href={to}>{to}</a>
         </Link>
       </li>
     );
@@ -63,7 +63,7 @@ function Header() {
       </button>
       <div className="collapse navbar-collapse" id="header">
         <ul className="navbar-nav mx-auto">
-          { ['yudi', 'portfolio', 'tools', 'contact'].map(MenuLink) }
+          {['yudi', 'portfolio', 'tools', 'contact'].map(MenuLink)}
         </ul>
       </div>
     </nav>
