@@ -1,12 +1,12 @@
 import Img from 'gatsby-image';
 import React from 'react';
 import pt from 'prop-types';
-import { graphql, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import './styles.scss';
 
-import { GithubIcon } from 'components/icons';
+import {GithubIcon} from 'components/icons';
 
-function Portfolio() {
+function Portfolio () {
   const images = useStaticQuery(graphql`
     query {
       Fylo: file(relativePath: {eq: "portfolio/fylo.jpg"}, absolutePath: {}) {
@@ -30,10 +30,17 @@ function Portfolio() {
           }
         }
       }
+      IPAddressTracker: file(relativePath: {eq: "portfolio/ip-tracker.jpg"}, absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
-  const PortfolioCard = ({ title, pageUrl, sourceUrl }, i) => (
+  const PortfolioCard = ({title, pageUrl, sourceUrl}, i) => (
     <div className="col-lg-4 col-md-6 mt-4" key={i}>
       <div className="portfolio__card border">
         <h3 className="portfolio__head py-3 border-bottom">{title}</h3>
@@ -76,6 +83,11 @@ function Portfolio() {
       title: 'Todo App',
       sourceUrl: 'https://github.com/yudi7ll/todo-app-main',
       pageUrl: 'https://yudi7ll.github.io/todo-app-main'
+    },
+    {
+      title: 'IP Address Tracker',
+      sourceUrl: 'https://github.com/yudi7ll/ip-address-tracker',
+      pageUrl: 'https://addr.netlify.app'
     }
   ].map(PortfolioCard);
 
