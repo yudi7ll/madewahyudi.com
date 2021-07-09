@@ -37,6 +37,13 @@ function Portfolio () {
           }
         }
       }
+      Backpackbuddy: file(relativePath: {eq: "portfolio/backpackbuddy.png"}, absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -88,6 +95,11 @@ function Portfolio () {
       title: 'IP Address Tracker',
       sourceUrl: 'https://github.com/yudi7ll/ip-address-tracker',
       pageUrl: 'https://addr.netlify.app'
+    },
+    {
+      title: 'Backpackbuddy',
+      sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
+      pageUrl: 'https://github.com/yudi7ll/backpackbuddy'
     }
   ].map(PortfolioCard);
 
