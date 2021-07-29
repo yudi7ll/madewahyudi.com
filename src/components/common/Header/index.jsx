@@ -1,10 +1,10 @@
-import {Link} from 'react-scroll';
-import React, {useState, useEffect} from 'react';
+import { Link } from 'react-scroll';
+import React, { useState, useEffect } from 'react';
 import $ from 'jquery';
 
-import "./styles.scss";
+import './styles.scss';
 
-function Header () {
+function Header() {
   const [shrink, setShrink] = useState(false);
 
   useEffect(() => {
@@ -14,26 +14,25 @@ function Header () {
       } else {
         setShrink(false);
       }
-    }
+    };
   }, []);
 
-  const MenuLink = to => {
-
+  const MenuLink = (to) => {
     const hideMenu = () => {
       $('.navbar-collapse').collapse('hide');
-    }
+    };
 
     return (
       <li
-        className={'nav-item mx-3'}
+        className="nav-item mx-3"
         key={to}
       >
         <Link
           className="navbar__link nav-link font-weight-bold text-uppercase"
-          activeClass={'navbar--active'}
+          activeClass="navbar--active"
           to={to}
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           onClick={hideMenu}
         >
           <a className="text-white" href={to}>{to}</a>
@@ -42,11 +41,11 @@ function Header () {
     );
   };
 
-  const BasicMenu = props => (
+  const BasicMenu = (props) => (
     <nav
       className={[
-        "navbar navbar-expand-md navbar-dark fixed-top",
-        shrink ? "navbar__shrink bg-blue" : "pt-md-4"
+        'navbar navbar-expand-md navbar-dark fixed-top',
+        shrink ? 'navbar__shrink bg-blue' : 'pt-md-4',
       ].join(' ')}
       {...props}
     >
@@ -59,7 +58,7 @@ function Header () {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="header">
         <ul className="navbar-nav mx-auto">
@@ -74,4 +73,4 @@ function Header () {
   );
 }
 
-export default Header
+export default Header;

@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
 
 // Common Components
-import { Header, Layout, Seo } from "components/common";
+import { Header, Layout, Seo } from 'components/common';
 
 // Landing Components
-import { Contact, Footer, Intro, MyTools, Portfolio } from "components/landing";
+import {
+  Contact, Footer, Intro, MyTools, Portfolio,
+} from 'components/landing';
 
 // global styles
-import "components/styles/globals.scss";
+import 'components/styles/globals.scss';
 
 const IndexPage = () => (
   <Layout>

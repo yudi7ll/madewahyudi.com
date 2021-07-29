@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export function IntroBg(props) {
   return (
     <svg
@@ -46,7 +45,7 @@ export function IntroBg(props) {
         fill="#8985A8"
       />
     </svg>
-  )
+  );
 }
 
 export function MyToolsIllustration(props) {
@@ -163,7 +162,7 @@ export function MyToolsIllustration(props) {
         </clipPath>
       </defs>
     </svg>
-  )
+  );
 }
 
 export function ContactIllustration(props) {
@@ -268,7 +267,7 @@ export function ContactIllustration(props) {
         fill="#6C63FF"
       />
     </svg>
-  )
+  );
 }
 
 export function BottomBg(props) {
@@ -325,5 +324,5 @@ export function BottomBg(props) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }

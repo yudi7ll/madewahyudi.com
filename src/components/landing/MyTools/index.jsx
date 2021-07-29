@@ -14,7 +14,9 @@ function MyTools() {
           </div>
           <div className="col-lg-5">
             <h2 className="text__header text-center">
-              the <span className="color--accent">tools</span> that i use
+              <span>the</span>
+              <span className="color--accent"> tools</span>
+              <span> that i use</span>
             </h2>
             <SkillIcon className="text-center" />
           </div>

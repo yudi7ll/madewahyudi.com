@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
 } from 'components/icons';
 
-function RenderSosmed ({Icon, to}) {
+function RenderSosmed({ Icon, to }) {
   return (
     <a
       className="sosmed"

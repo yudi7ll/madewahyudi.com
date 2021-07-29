@@ -1,3 +1,5 @@
+const sass = require('sass');
+
 module.exports = {
   siteMetadata: {
     title: 'Yudi',
@@ -9,7 +11,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require('sass'),
+        implementation: sass,
       },
     },
     {
@@ -38,35 +40,35 @@ module.exports = {
       options: {
         precachePages: ['/*'],
         workboxConfig: {
-          importWorkboxFrom: `local`
+          importWorkboxFrom: 'local',
         },
         runtimeCaching: [
           {
             // Use cacheFirst since these don't need to be revalidated (same RegExp
             // and same reason as above)
             urlPattern: /(\.js$|\.css$|static\/)/,
-            handler: `CacheFirst`,
+            handler: 'CacheFirst',
           },
           {
             // page-data.json files, static query results and app-data.json
             // are not content hashed
             urlPattern: /^https?:.*\/page-data\/.*\.json/,
-            handler: `StaleWhileRevalidate`,
+            handler: 'StaleWhileRevalidate',
           },
           {
             // Add runtime caching of various other page resources
             urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
-            handler: `StaleWhileRevalidate`,
+            handler: 'StaleWhileRevalidate',
           },
           {
             // Google Fonts CSS (doesn't end in .css so we need to specify it)
             urlPattern: /^https?:\/\/fonts\.googleapis\.com\/css/,
-            handler: `StaleWhileRevalidate`,
+            handler: 'StaleWhileRevalidate',
           },
         ],
         skipWaiting: true,
         clientsClaim: true,
-      }
+      },
     },
     {
       resolve: 'gatsby-plugin-eslint',

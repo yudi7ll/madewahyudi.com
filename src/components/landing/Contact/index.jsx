@@ -3,10 +3,10 @@ import { ContactIllustration } from 'components/svg';
 import './styles.scss';
 
 function ContactForm() {
-  let url = 'https://api.sendinblue.com/v3/smtp/email';
-  let name = useRef(''),
-    email = useRef(''),
-    message = useRef('');
+  const url = 'https://api.sendinblue.com/v3/smtp/email';
+  const name = useRef('');
+  const email = useRef('');
+  const message = useRef('');
   const [isLoading, setIsLoading] = useState(false);
 
   const submitHandler = async (e) => {
@@ -18,13 +18,13 @@ function ContactForm() {
         name: name.current.value,
         email: email.current.value,
       },
-      subject: 'New message from ' + document.location.host,
+      subject: `New message from ${document.location.host}`,
       htmlContent: message.current.value,
       to: [
         {
-          email: "madewahyudi0@gmail.com",
-          name: "Yudi"
-        }
+          email: 'madewahyudi0@gmail.com',
+          name: 'Yudi',
+        },
       ],
     };
 
@@ -33,16 +33,16 @@ function ContactForm() {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        'api-key': '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'
+        'api-key': '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',
       },
       body: JSON.stringify(body),
     };
 
     e.target.reset();
-    await fetch(url, options)
+    await fetch(url, options);
     alert('Your message has been sent!');
     setIsLoading(false);
-  }
+  };
 
   return (
     <>
@@ -80,7 +80,7 @@ function ContactForm() {
             ref={message}
             required
             rows="5"
-          ></textarea>
+          />
         </div>
         <button type="submit" className="btn bg--purple text-white py-2 px-3 rounded-0 font-weight-bold rounded-0">
           { isLoading ? 'Sending ...' : 'SEND MESSAGE' }

@@ -6,7 +6,8 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "airbnb"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -19,5 +20,8 @@
         "react"
     ],
     "rules": {
+      "import/no-unresolved": "off",
+      "no-alert": "off",
+      "react/jsx-props-no-spreading": "off"
     }
 }
