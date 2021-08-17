@@ -48,7 +48,7 @@ export default () => [
     Icon: TwitterIcon,
   },
   {
-    to: 'https://www.linkedin.com/in/yudi-07b131138',
+    to: 'https://www.linkedin.com/in/yudi7ll',
     Icon: LinkedInIcon,
   },
 ].map(RenderSosmed);
