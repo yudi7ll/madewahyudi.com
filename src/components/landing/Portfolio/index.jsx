@@ -90,8 +90,8 @@ function Portfolio() {
     },
     {
       title: 'Todo App',
-      sourceUrl: 'https://github.com/yudi7ll/todo-app-main',
-      pageUrl: 'https://yudi7ll.github.io/todo-app-main',
+      sourceUrl: 'https://github.com/yudi7ll/todo-app',
+      pageUrl: 'https://yudi7ll.github.io/todo-app',
     },
     {
       title: 'IP Address Tracker',
