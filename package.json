@@ -4,7 +4,7 @@
   "description": "Web Developer",
   "version": "0.1.0",
   "author": "Yudi <madewahyudi22@gmail.com>",
-  "homepage": "https://yudi.live",
+  "homepage": "/",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "framer-motion": "^2.9.5",
@@ -56,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yudi7ll/yudi7ll.github.io"
+    "url": "https://github.com/yudi7ll/yudi.live"
   },
   "bugs": {
-    "url": "https://github.com/yudi7ll/yudi7ll.github.io/issues"
+    "url": "https://github.com/yudi7ll/yudi.live/issues"
   }
 }

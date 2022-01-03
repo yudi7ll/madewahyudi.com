@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Common Components
-import { Header, Layout, Seo } from 'components/common';
+import { Layout, Seo } from 'components/common';
 
 // Landing Components
 import {
@@ -14,7 +14,6 @@ import 'components/styles/globals.scss';
 const IndexPage = () => (
   <Layout>
     <Seo title="Yudi" />
-    <Header />
     <Intro />
     <Portfolio />
     <MyTools />

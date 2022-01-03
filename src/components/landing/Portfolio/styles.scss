@@ -18,6 +18,7 @@
 
     &:hover {
       filter: grayscale(1);
+      object-fit: contain !important;
     }
   }
 

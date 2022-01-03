@@ -1,7 +1,8 @@
-import Img from 'gatsby-image';
 import React from 'react';
-import pt from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import pt from 'prop-types';
+
 import './styles.scss';
 
 import { GithubIcon } from 'components/icons';
@@ -38,6 +39,13 @@ function Portfolio() {
         }
       }
       Backpackbuddy: file(relativePath: {eq: "portfolio/backpackbuddy.jpg"}, absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      BoxyGuild: file(relativePath: {eq: "portfolio/boxyguild.jpg"}, absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
@@ -102,6 +110,11 @@ function Portfolio() {
       title: 'Backpackbuddy',
       sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
       pageUrl: 'https://github.com/yudi7ll/backpackbuddy',
+    },
+    {
+      title: 'BoxyGuild',
+      sourceUrl: 'https://github.com/boxswap',
+      pageUrl: 'https://boxyguild.com',
     },
   ].map(PortfolioCard);
 
