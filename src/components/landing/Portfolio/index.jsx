@@ -87,6 +87,11 @@ function Portfolio() {
 
   const PortfolioLists = () => [
     {
+      title: 'BoxyGuild',
+      sourceUrl: 'https://github.com/boxswap',
+      pageUrl: 'https://boxyguild.com',
+    },
+    {
       title: 'Fylo',
       sourceUrl: 'https://github.com/yudi7ll/fylo',
       pageUrl: 'https://yudi7ll.github.io/fylo',
@@ -110,11 +115,6 @@ function Portfolio() {
       title: 'Backpackbuddy',
       sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
       pageUrl: 'https://github.com/yudi7ll/backpackbuddy',
-    },
-    {
-      title: 'BoxyGuild',
-      sourceUrl: 'https://github.com/boxswap',
-      pageUrl: 'https://boxyguild.com',
     },
   ].map(PortfolioCard);
 
