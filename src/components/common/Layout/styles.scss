@@ -9,6 +9,7 @@ main {
   &:before {
     background-image: url('../../../images/bottom-bg.svg');
     background-repeat: no-repeat;
+    background-size: cover;
     content: '';
     height: 2000px;
     width: 100%;
