@@ -8,7 +8,7 @@
 npm install
 npm run dev
 ```
-server will running on [localhost:8080](http://localhost:8080)
+server will running on [localhost:8000](http://localhost:8000)
 
 ### Author
 [Yudi](https://github.com/yudi7ll)
