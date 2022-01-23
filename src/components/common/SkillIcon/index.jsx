@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import {
   LinuxIcon,
   FigmaIcon,
-  FirefoxIcon,
   GatsbyIcon,
   GitIcon,
   JavascriptIcon,
@@ -58,7 +57,6 @@ function SkillIcon(props) {
           { Icon: GatsbyIcon },
           { Icon: GitIcon },
           { Icon: VimIcon },
-          { Icon: FirefoxIcon },
           { Icon: WordpressIcon },
           { Icon: FigmaIcon },
         ].map(RenderIcon)
