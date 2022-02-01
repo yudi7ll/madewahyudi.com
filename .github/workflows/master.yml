@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
       - name: Deploy using ssh
+      - run: npm ci && npm run build
       - uses: appleboy/ssh-action@master
         with:
           host: ${{secrets.SSH_HOST}}
