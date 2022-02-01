@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - run: npm ci && CI=false npm run build
       - uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
