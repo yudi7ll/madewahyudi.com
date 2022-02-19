@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Yudi <madewahyudi22@gmail.com>",
   "homepage": "/",
+  "engines": {
+    "node": "10.x"
+  },
   "dependencies": {
     "bootstrap": "^4.5.3",
     "framer-motion": "^2.9.5",
@@ -25,8 +28,8 @@
     "react-dom": "^16.12.0",
     "react-fontawesome": "^1.7.1",
     "react-helmet": "^6.1.0",
-    "react-scroll": "^1.8.1",
-    "sass": "^1.29.0",
+    "react-scroll": "^1.8.5",
+    "sass": "^1.49.8",
     "styled-components": "^5.2.1",
     "to-slug-case": "^1.0.0",
     "to-title-case": "^1.0.0"

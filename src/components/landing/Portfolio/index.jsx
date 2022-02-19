@@ -52,6 +52,13 @@ function Portfolio() {
           }
         }
       }
+      DashF: file(relativePath: {eq: "portfolio/dashf.jpg"}, absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -65,7 +72,7 @@ function Portfolio() {
     return (
       <div className="col-lg-4 col-md-6 mt-4" key={i}>
         <div className="portfolio__card border">
-          <h3 className="portfolio__head py-3 border-bottom">{title}</h3>
+          <h3 className="portfolio__head py-3 border-bottom">{ title }</h3>
           <a className="portfolio__img-link" href={pageUrl} target="_blank" rel="noreferrer">
             <Img className="portfolio__img" fluid={images[title.replace(/ /g, '')].childImageSharp.fluid} alt={title} />
           </a>
@@ -92,6 +99,11 @@ function Portfolio() {
       pageUrl: 'https://boxyguild.com',
     },
     {
+      title: 'Backpackbuddy',
+      sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
+      pageUrl: 'https://github.com/yudi7ll/backpackbuddy',
+    },
+    {
       title: 'Fylo',
       sourceUrl: 'https://github.com/yudi7ll/fylo',
       pageUrl: 'https://yudi7ll.github.io/fylo',
@@ -112,9 +124,9 @@ function Portfolio() {
       pageUrl: 'https://addr.netlify.app',
     },
     {
-      title: 'Backpackbuddy',
-      sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
-      pageUrl: 'https://github.com/yudi7ll/backpackbuddy',
+      title: 'DashF',
+      sourceUrl: 'https://github.com/yudi7ll/dashf',
+      pageUrl: 'https://dashf.yudi.live',
     },
   ].map(PortfolioCard);
 
