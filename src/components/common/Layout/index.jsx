@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
       rel="stylesheet"
     />
     {/* eslint-disable-next-line react/no-danger */ }
-    <div dangerouslySetInnerHTML={{
+    <div dangerouslySetInnerHTML={ {
       __html: `
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNZQGS8EKR"></script>
           <script>
@@ -20,9 +20,20 @@ const Layout = ({ children }) => (
             gtag('config', 'G-LNZQGS8EKR');
           </script>
         `,
-    }}
+    } }
     />
-    <main>{ children }</main>
+    <main>
+      <>
+        { children }
+        {
+          Array.from(Array(10)).map(() => {
+            <div className="circle-container">
+              <div className="circle" />
+            </div>
+          })
+        }
+      </>
+    </main>
   </>
 );
 
