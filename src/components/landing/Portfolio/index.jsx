@@ -52,13 +52,6 @@ function Portfolio() {
           }
         }
       }
-      DashF: file(relativePath: {eq: "portfolio/dashf.jpg"}, absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `);
 
@@ -72,7 +65,7 @@ function Portfolio() {
     return (
       <div className="col-lg-4 col-md-6 mt-4" key={i}>
         <div className="portfolio__card border">
-          <h3 className="portfolio__head py-3 border-bottom">{ title }</h3>
+          <h3 className="portfolio__head py-3 border-bottom">{title}</h3>
           <a className="portfolio__img-link" href={pageUrl} target="_blank" rel="noreferrer">
             <Img className="portfolio__img" fluid={images[title.replace(/ /g, '')].childImageSharp.fluid} alt={title} />
           </a>
@@ -122,11 +115,6 @@ function Portfolio() {
       title: 'IP Address Tracker',
       sourceUrl: 'https://github.com/yudi7ll/ip-address-tracker',
       pageUrl: 'https://addr.netlify.app',
-    },
-    {
-      title: 'DashF',
-      sourceUrl: 'https://github.com/yudi7ll/dashf',
-      pageUrl: 'https://dashf.yudi.live',
     },
   ].map(PortfolioCard);
 
