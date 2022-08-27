@@ -11,15 +11,17 @@ import {
 // global styles
 import 'components/styles/globals.scss';
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Yudi" />
-    <Intro />
-    <Portfolio />
-    <MyTools />
-    <Contact />
-    <Footer />
-  </Layout>
-);
+function IndexPage() {
+  return (
+    <Layout>
+      <Seo title="Yudi" />
+      <Intro />
+      <Portfolio />
+      <MyTools />
+      <Contact />
+      <Footer />
+    </Layout>
+  );
+}
 
 export default IndexPage;

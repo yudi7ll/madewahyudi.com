@@ -18,8 +18,8 @@ import {
   VimIcon,
 } from 'components/icons';
 
-function SkillIcon(props) {
-  const RenderIcon = ({ Icon, style }) => (
+function RenderIcon({ Icon, style }) {
+  return (
     <div
       className="d-inline-block rounded-circle border shadow p-2 m-2"
       style={{
@@ -32,7 +32,9 @@ function SkillIcon(props) {
       <Icon height="45px" width="45px" />
     </div>
   );
+}
 
+function SkillIcon(props) {
   RenderIcon.defaultProps = {
     style: {},
   };

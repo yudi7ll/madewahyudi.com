@@ -48,7 +48,7 @@ function ContactForm() {
     <>
       <p className="contact__header">Like my work? please let me know.</p>
       <form onSubmit={submitHandler}>
-        <div className="form-group">
+        <div className="mb-3">
           <input
             className="form-control rounded-0"
             disabled={isLoading}
@@ -59,7 +59,7 @@ function ContactForm() {
             required
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <input
             aria-describedby="emailHelp"
             className="form-control rounded-0"
@@ -71,7 +71,7 @@ function ContactForm() {
             type="email"
           />
         </div>
-        <div className="form-group">
+        <div className="mb-3">
           <textarea
             className="form-control rounded-0"
             disabled={isLoading}
@@ -82,7 +82,7 @@ function ContactForm() {
             rows="5"
           />
         </div>
-        <button type="submit" className="btn bg--purple text-white py-2 px-3 rounded-0 font-weight-bold rounded-0">
+        <button type="submit" className="btn bg--purple text-white py-2 px-3 rounded-0 fw-bold rounded-0">
           { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
         </button>
       </form>
