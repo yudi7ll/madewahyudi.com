@@ -1,7 +1,6 @@
 import React from 'react';
 import pt from 'prop-types';
 import './styles.scss';
-
 import {
   TelegramIcon,
   GithubIcon,
@@ -32,7 +31,7 @@ RenderSosmed.propTypes = {
 
 export default () => [
   {
-    to: 'https://t.me/mbeerrr',
+    to: 'https://t.me/yudi7ll',
     Icon: TelegramIcon,
   },
   {
