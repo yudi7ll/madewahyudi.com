@@ -10,10 +10,10 @@ function Layout({ children }) {
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap"
         rel="stylesheet"
       />
-      {/* eslint-disable-next-line react/no-danger */ }
+      {/* eslint-disable-next-line react/no-danger */}
       <div dangerouslySetInnerHTML={{
         __html: `
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNZQGS8EKR"></script>
+          <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-LNZQGS8EKR" />
           <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -23,7 +23,7 @@ function Layout({ children }) {
         `,
       }}
       />
-      <main>{ children }</main>
+      <main>{children}</main>
     </>
   );
 }

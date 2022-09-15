@@ -23,50 +23,42 @@ function PortfolioCard({ title, pageUrl, sourceUrl }, i) {
           }
         }
       }
-      Easybank: file(
-        relativePath: { eq: "portfolio/easybank.jpg" }
-        absolutePath: {}
-        ) {
+      Easybank: file(relativePath: { eq: "portfolio/easybank.jpg" } absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      TodoApp: file(
-        relativePath: { eq: "portfolio/todo-app-main.jpg" }
-        absolutePath: {}
-        ) {
+      TodoApp: file(relativePath: { eq: "portfolio/todo-app-main.jpg" } absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      IPAddressTracker: file(
-        relativePath: { eq: "portfolio/ip-tracker.jpg" }
-        absolutePath: {}
-        ) {
+      IPAddressTracker: file(relativePath: { eq: "portfolio/ip-tracker.jpg" } absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      Backpackbuddy: file(
-        relativePath: { eq: "portfolio/backpackbuddy.jpg" }
-        absolutePath: {}
-        ) {
+      Backpackbuddy: file(relativePath: { eq: "portfolio/backpackbuddy.jpg" } absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      BoxyGuild: file(
-        relativePath: { eq: "portfolio/boxyguild.jpg" }
-        absolutePath: {}
-        ) {
+      BackpackbuddyAdminPanel: file(relativePath: { eq: "portfolio/admin-backpackbuddy.png" } absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      DashF: file(relativePath: { eq: "portfolio/dashf.jpg" } absolutePath: {}) {
         childImageSharp {
           fluid(fit: COVER) {
             ...GatsbyImageSharpFluid
@@ -124,14 +116,19 @@ function PortfolioCard({ title, pageUrl, sourceUrl }, i) {
 
 const PortfolioLists = () => [
   {
-    title: 'BoxyGuild',
-    sourceUrl: 'https://github.com/boxswap',
-    pageUrl: 'https://boxyguild.com',
-  },
-  {
     title: 'Backpackbuddy',
     sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
-    pageUrl: 'https://github.com/yudi7ll/backpackbuddy',
+    pageUrl: 'https://backpackbuddy.yudi.live',
+  },
+  {
+    title: 'Backpackbuddy Admin Panel',
+    sourceUrl: 'https://github.com/yudi7ll/backpackbuddy-admin',
+    pageUrl: 'https://admin-backpackbuddy.yudi.live',
+  },
+  {
+    title: 'DashF',
+    sourceUrl: 'https://github.com/yudi7ll/dash-f',
+    pageUrl: 'https://dash-f.yudi.live',
   },
   {
     title: 'Fylo',

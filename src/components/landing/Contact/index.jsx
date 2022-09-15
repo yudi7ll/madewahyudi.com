@@ -82,7 +82,7 @@ function ContactForm() {
             rows="5"
           />
         </div>
-        <button type="submit" className="btn bg--purple text-white py-2 px-3 rounded-0 fw-bold rounded-0">
+        <button type="submit" className="text__sm btn bg--purple text-white py-2 px-3 rounded-0 fw-bold rounded-0">
           { isLoading ? 'Sending ...' : 'SEND MESSAGE' }
         </button>
       </form>
