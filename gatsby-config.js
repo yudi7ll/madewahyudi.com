@@ -36,15 +36,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        precachePages: ['/*'],
-        workboxConfig: {
-          importWorkboxFrom: 'local',
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-eslint',
       options: {
         stages: ['develop'],
