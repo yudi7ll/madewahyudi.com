@@ -118,17 +118,17 @@ const PortfolioLists = () => [
   {
     title: 'Backpackbuddy',
     sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
-    pageUrl: 'https://backpackbuddy.yudi.live',
+    pageUrl: 'https://backpackbuddy.madewahyudi.com',
   },
   {
     title: 'Backpackbuddy Admin Panel',
     sourceUrl: 'https://github.com/yudi7ll/backpackbuddy-admin',
-    pageUrl: 'https://admin-backpackbuddy.yudi.live',
+    pageUrl: 'https://admin-backpackbuddy.madewahyudi.com',
   },
   {
     title: 'DashF',
     sourceUrl: 'https://github.com/yudi7ll/dash-f',
-    pageUrl: 'https://dash-f.yudi.live',
+    pageUrl: 'https://dash-f.madewahyudi.com',
   },
   {
     title: 'Fylo',
