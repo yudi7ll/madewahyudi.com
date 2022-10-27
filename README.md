@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>yudi.live</h1>
+  <h1>madewahyudi.com</h1>
   <img src="https://api.netlify.com/api/v1/badges/a315e3f9-43d6-4f28-beec-956d2daefe24/deploy-status" alt="Netlify Status" />
 </div>
 
