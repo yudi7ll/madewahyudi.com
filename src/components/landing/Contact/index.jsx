@@ -3,45 +3,51 @@ import { ContactIllustration } from 'components/svg';
 import './styles.scss';
 
 function ContactForm() {
-  const url = 'https://api.sendinblue.com/v3/smtp/email';
   const name = useRef('');
   const email = useRef('');
   const message = useRef('');
   const [isLoading, setIsLoading] = useState(false);
 
   const submitHandler = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
+    try {
+      e.preventDefault();
+      setIsLoading(true);
 
-    const body = {
-      sender: {
-        name: name.current.value,
-        email: email.current.value,
-      },
-      subject: `New message from ${document.location.host}`,
-      htmlContent: message.current.value,
-      to: [
-        {
-          email: 'madewahyudi0@gmail.com',
-          name: 'Yudi',
+      const body = {
+        sender: {
+          name: name.current.value,
+          email: email.current.value,
         },
-      ],
-    };
+        subject: `New message from ${document.location.host}`,
+        htmlContent: message.current.value,
+        to: [
+          {
+            email: 'madewahyudi0@gmail.com',
+            name: 'Yudi',
+          },
+        ],
+      };
 
-    const options = {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-        'api-key': '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',
-      },
-      body: JSON.stringify(body),
-    };
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          accept: 'application/json',
+        },
+        body: JSON.stringify(body),
+      });
 
-    e.target.reset();
-    await fetch(url, options);
-    alert('Your message has been sent!');
-    setIsLoading(false);
+      if (!res.ok) {
+        throw new Error();
+      }
+
+      alert('Your message has been sent.');
+      e.target.reset();
+    } catch (_) {
+      alert('Failed to send your message. Try again later');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
