@@ -14,18 +14,10 @@ function ContactForm() {
       setIsLoading(true);
 
       const body = {
-        sender: {
-          name: name.current.value,
-          email: email.current.value,
-        },
+        name: name.current.value,
+        email: email.current.value,
         subject: `New message from ${document.location.host}`,
-        htmlContent: message.current.value,
-        to: [
-          {
-            email: 'madewahyudi0@gmail.com',
-            name: 'Yudi',
-          },
-        ],
+        message: message.current.value,
       };
 
       const res = await fetch('/api/send-email', {

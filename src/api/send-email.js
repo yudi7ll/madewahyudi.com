@@ -34,6 +34,7 @@ export default async function handler(req, res) {
   const response = await fetch(url, options);
   if (!response.ok) {
     res.json({ success: false });
+    return;
   }
 
   res.json({ success: true });
