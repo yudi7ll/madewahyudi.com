@@ -26,7 +26,7 @@ export default async function handler(req, res) {
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
-      'api-key': process.env.API_KEY,
+      'api-key': process.env.API_KEY ?? 'lol',
     },
     body: JSON.stringify(payload),
   };

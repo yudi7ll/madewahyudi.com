@@ -41,6 +41,12 @@ function ContactForm() {
         throw new Error();
       }
 
+      const result = await res.json();
+
+      if (!result.success) {
+        throw new Error();
+      }
+
       alert('Your message has been sent.');
       e.target.reset();
     } catch (_) {
