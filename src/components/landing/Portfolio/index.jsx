@@ -65,6 +65,13 @@ function PortfolioCard({ title, pageUrl, sourceUrl }, i) {
           }
         }
       }
+      ChibiWorld: file(relativePath: { eq: "portfolio/chibiworld.png" } absolutePath: {}) {
+        childImageSharp {
+          fluid(fit: COVER) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
 `);
 
@@ -115,6 +122,11 @@ function PortfolioCard({ title, pageUrl, sourceUrl }, i) {
 }
 
 const PortfolioLists = () => [
+  {
+    title: 'Chibi World',
+    sourceUrl: 'https://github.com/boxswap',
+    pageUrl: 'https://chibiworld.com',
+  },
   {
     title: 'Backpackbuddy',
     sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
