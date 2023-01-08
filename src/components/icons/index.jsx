@@ -1151,3 +1151,60 @@ export function LinuxIcon(props) {
     </svg>
   );
 }
+
+export function ProprietaryIcon(props) {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      id="Layer_1"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <defs>
+        <style>
+          {
+          '.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.91px}'
+        }
+        </style>
+      </defs>
+      <path
+        className="cls-1"
+        d="M13 22.5H3.41a1.92 1.92 0 0 1-1.91-1.91V3.41A1.92 1.92 0 0 1 3.41 1.5H13a1.92 1.92 0 0 1 1.91 1.91v5.73"
+      />
+      <path
+        className="cls-1"
+        d="M10.09 2.45H6.27a1 1 0 0 1-.95-1h5.73a1 1 0 0 1-.96 1ZM17.74 22.48h-.06A6.58 6.58 0 0 1 13 16.2v-3.78l4.73-1.37 4.82 1.37v3.75a6.56 6.56 0 0 1-4.81 6.31ZM5.32 14.86h3.34a1.43 1.43 0 0 0 1.43-1.43A1.43 1.43 0 0 0 8.66 12h-1a1.43 1.43 0 0 1-1.43-1.43A1.43 1.43 0 0 1 7.7 9.14h3.35M8.18 6.27v2.87M8.18 13.91v3.82"
+      />
+    </svg>
+  );
+}
+
+export function CircleIcon(props) {
+  return (
+    <svg
+      width="1em"
+      height="1em"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{
+        enableBackground: 'new 0 0 48 48',
+      }}
+      xmlSpace="preserve"
+      {...props}
+    >
+      <style>{'.st1{display:none}'}</style>
+      <g id="Your_Icons">
+        <path
+          style={{
+            fill: 'none',
+          }}
+          d="M0 0h48v48H0z"
+        />
+        <path d="M24 40c-8.822 0-16-7.178-16-16S15.178 8 24 8s16 7.178 16 16-7.178 16-16 16z" />
+      </g>
+    </svg>
+  );
+}

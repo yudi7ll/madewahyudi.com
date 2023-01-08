@@ -22,8 +22,14 @@
     }
   }
 
-  &__link:hover {
-    opacity: .4;
-    transition: .2s;
+  &__link {
+    &:hover {
+      text-decoration: underline;
+      transition: .2s;
+    }
+
+    &--disabled {
+      opacity: .3;
+    }
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import { CircleIcon } from '../../icons';
 
 function Footer() {
   return (
@@ -10,6 +11,8 @@ function Footer() {
             <span>&copy; Copyright </span>
             <span>{(new Date()).getFullYear()}</span>
             <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer"> Yudi</a>
+            <CircleIcon className="mx-1" height="10px" width="10px" fill="#fff" />
+            Under development
           </small>
         </div>
       </div>

@@ -38,6 +38,11 @@ a {
   &__header {
     font-size: 40px;
     text-transform: uppercase;
+
+    &--smaller {
+      font-size: 32px;
+      text-transform: uppercase;
+    }
   }
 }
 

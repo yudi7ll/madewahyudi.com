@@ -1,168 +1,7 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
-import pt from 'prop-types';
-
+import OpenSource from './OpenSource';
+import Proprietary from './Proprietary';
 import './styles.scss';
-
-import { GithubIcon } from 'components/icons';
-
-function PortfolioCard({ title, pageUrl, sourceUrl }, i) {
-  PortfolioCard.propTypes = {
-    title: pt.string.isRequired,
-    pageUrl: pt.string.isRequired,
-    sourceUrl: pt.string.isRequired,
-  };
-
-  const images = useStaticQuery(graphql`
-    query {
-      Fylo: file(relativePath: { eq: "portfolio/fylo.jpg" }, absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      Easybank: file(relativePath: { eq: "portfolio/easybank.jpg" } absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      TodoApp: file(relativePath: { eq: "portfolio/todo-app-main.jpg" } absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      IPAddressTracker: file(relativePath: { eq: "portfolio/ip-tracker.jpg" } absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      Backpackbuddy: file(relativePath: { eq: "portfolio/backpackbuddy.jpg" } absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      BackpackbuddyAdminPanel: file(relativePath: { eq: "portfolio/admin-backpackbuddy.png" } absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      DashF: file(relativePath: { eq: "portfolio/dashf.jpg" } absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      ChibiWorld: file(relativePath: { eq: "portfolio/chibiworld.png" } absolutePath: {}) {
-        childImageSharp {
-          fluid(fit: COVER) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-`);
-
-  return (
-    <div className="col-lg-4 col-md-6 mt-4" key={i}>
-      <div className="portfolio__card border">
-        <h3 className="portfolio__head py-3 border-bottom">{title}</h3>
-        <a
-          className="portfolio__img-link"
-          href={pageUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Img
-            className="portfolio__img"
-            fluid={images[title.replace(/ /g, '')].childImageSharp.fluid}
-            alt={title}
-          />
-        </a>
-        <div className="portfolio__action d-flex align-items-center p-3 border-top text-center">
-          <div className="col-4">
-            <a
-              className="text-white portfolio__link"
-              href={pageUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Visit
-            </a>
-          </div>
-          <div className="col-4">
-            <GithubIcon height="38px" width="38px" fill="#fff" />
-          </div>
-          <div className="col-4">
-            <a
-              className="text-white portfolio__link"
-              href={sourceUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Source
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-const PortfolioLists = () => [
-  {
-    title: 'Chibi World',
-    sourceUrl: 'https://github.com/boxswap',
-    pageUrl: 'https://chibiworld.com',
-  },
-  {
-    title: 'Backpackbuddy',
-    sourceUrl: 'https://github.com/yudi7ll/backpackbuddy',
-    pageUrl: 'https://backpackbuddy.madewahyudi.com',
-  },
-  {
-    title: 'Backpackbuddy Admin Panel',
-    sourceUrl: 'https://github.com/yudi7ll/backpackbuddy-admin',
-    pageUrl: 'https://admin-backpackbuddy.madewahyudi.com',
-  },
-  {
-    title: 'DashF',
-    sourceUrl: 'https://github.com/yudi7ll/dash-f',
-    pageUrl: 'https://dash-f.madewahyudi.com',
-  },
-  {
-    title: 'Fylo',
-    sourceUrl: 'https://github.com/yudi7ll/fylo',
-    pageUrl: 'https://yudi7ll.github.io/fylo',
-  },
-  {
-    title: 'Easybank',
-    sourceUrl: 'https://github.com/yudi7ll/easybank',
-    pageUrl: 'https://yudi7ll.github.io/easybank',
-  },
-  {
-    title: 'Todo App',
-    sourceUrl: 'https://github.com/yudi7ll/todo-app',
-    pageUrl: 'https://yudi7ll.github.io/todo-app',
-  },
-  {
-    title: 'IP Address Tracker',
-    sourceUrl: 'https://github.com/yudi7ll/ip-address-tracker',
-    pageUrl: 'https://addr.netlify.app',
-  },
-].map(PortfolioCard);
 
 function Portfolio() {
   return (
@@ -173,7 +12,18 @@ function Portfolio() {
           <span className="color--accent">works</span>
         </h2>
         <div className="row">
-          <PortfolioLists />
+          <OpenSource />
+        </div>
+      </div>
+
+      <div className="container portfolio">
+        <h2 className="text__header text-center">
+          <span className="color--accent">proprietary </span>
+          project
+        </h2>
+        <small className="d-flex justify-content-center" style={{ opacity: 0.5 }}>(( Under construction ))</small>
+        <div className="row">
+          <Proprietary />
         </div>
       </div>
     </div>
