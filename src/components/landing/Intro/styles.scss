@@ -21,4 +21,78 @@
     color: white;
     line-height: 150%;
   }
+
+  &__portfolio-btn {
+    a {
+      display: inline-block;
+      background: transparent;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 10px 30px;
+      transition: 0.5s;
+      position: relative;
+      font-size: 17px;
+      border: 1px solid #eaeaea;
+      color: #fff;
+    }
+
+    a:hover {
+      letter-spacing: 0.25em;
+      color: $yellow;
+      box-shadow: 0 0 45px $yellow;
+      border-color: $yellow;
+    }
+
+    a::before {
+      content: '';
+      position: absolute;
+      inset: 2px;
+    }
+
+    a span {
+      position: relative;
+      z-index: 1;
+    }
+
+    a i {
+      position: absolute;
+      inset: 0;
+      display: block;
+    }
+
+    a i::before {
+      content: '';
+      position: absolute;
+      border: 2px solid $yellow;
+      width: 7px;
+      height: 4px;
+      top: -3.5px;
+      left: 80%;
+      background: #222222;
+      transform: translateX(-50%);
+      transition: 0.5s;
+    }
+
+    a:hover i::before {
+      width: 20px;
+      left: 20%;
+    }
+
+    a i::after {
+      content: '';
+      position: absolute;
+      border: 2px solid $yellow;
+      width: 7px;
+      height: 4px;
+      bottom: -3.5px;
+      left: 20%;
+      transform: translateX(-50%);
+      transition: 0.5s;
+    }
+
+    a:hover i::after {
+      width: 20px;
+      left: 80%;
+    }
+  }
 }

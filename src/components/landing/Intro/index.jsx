@@ -36,8 +36,9 @@ function Intro() {
               <Sosmed />
             </div>
             <div className="intro__portfolio-btn">
-              <Link className="btn btn-outline-light rounded-0 mt-4 px-5 py-2" to="portfolio">
-                Portfolio
+              <Link className="btn mt-4 px-5 py-2" to="portfolio">
+                <span>Portfolio</span>
+                <i />
               </Link>
             </div>
           </div>
