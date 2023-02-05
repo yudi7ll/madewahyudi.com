@@ -13,6 +13,7 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
+    'gatsby-plugin-react-svg',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

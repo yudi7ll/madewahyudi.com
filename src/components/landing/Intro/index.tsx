@@ -1,5 +1,5 @@
 import React from 'react'
-import { IntroBg } from '../../../components/svg'
+import Illustration from '../../../images/illustration.svg'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 import { Sosmeds } from '../../../components/common'
@@ -17,8 +17,8 @@ const Intro = () => (
     }}
   >
     <div className="container">
-      <div className="row">
-        <div className="col-lg-5 pt-0 pt-lg-5">
+      <div className="intro__wrapper">
+        <div className="intro__content">
           <p className="mb-1">Hi, my name is</p>
           <h1 className="intro__heading1">
             <span>I MADE WAH</span>
@@ -38,8 +38,8 @@ const Intro = () => (
             </Link>
           </div>
         </div>
-        <div className="col-lg-7 d-none d-lg-block">
-          <IntroBg />
+        <div className="intro__illustration">
+          <Illustration />
         </div>
       </div>
     </div>
