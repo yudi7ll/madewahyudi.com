@@ -68,6 +68,13 @@ function PortfolioCard({ title, pageUrl }, i) {
             }
           }
         }
+        AnimalLoverPetshop: file(relativePath: { eq: "portfolio/animal-lover.png" } absolutePath: {}) {
+          childImageSharp {
+            fluid(fit: COVER) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
   `);
 
@@ -149,6 +156,10 @@ const Proprietary = () => [
   },
   {
     title: 'The Yogasari Seminyak',
+    pageUrl: null,
+  },
+  {
+    title: 'Animal Lover Petshop',
     pageUrl: null,
   },
 ].map(PortfolioCard);
