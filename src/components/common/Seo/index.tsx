@@ -1,12 +1,15 @@
-import FaviconImage from 'images/favicon.png';
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({
-  description, lang, meta, title,
-}) {
+interface SEOProps {
+  description?: string
+  lang?: string
+  meta?: { [k: string]: string }[]
+  title: string
+}
+
+const SEO = ({ description, lang, meta = [], title }: SEOProps) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,19 +21,15 @@ function SEO({
           }
         }
       }
-    `,
-  );
+    `
+  )
 
-  const metaDescription = description || site.siteMetadata.description;
-  const defaultTitle = site.siteMetadata?.title;
+  const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${metaDescription}` : null}
       meta={[
         {
           name: 'description',
@@ -42,7 +41,7 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: FaviconImage,
+          content: require('../../../images/favicon.png'),
         },
         {
           property: 'og:description',
@@ -68,23 +67,10 @@ function SEO({
           name: 'twitter:description',
           content: metaDescription,
         },
-      ].concat(meta)}
+        ...meta,
+      ]}
     />
-  );
+  )
 }
 
-SEO.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: '',
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  // eslint-disable-next-line react/forbid-prop-types
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-};
-
-export default SEO;
+export default SEO

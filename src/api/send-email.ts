@@ -1,15 +1,13 @@
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
 
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
   if (req.method !== 'POST') {
-    res.status(405).end();
-    return;
+    res.status(405).end()
+    return
   }
 
-  const {
-    name, email, subject, message,
-  } = req.body;
-  const url = 'https://api.sendinblue.com/v3/smtp/email';
+  const { name, email, subject, message } = req.body
+  const url = 'https://api.sendinblue.com/v3/smtp/email'
   const payload = {
     sender: { name, email },
     subject,
@@ -20,7 +18,7 @@ export default async function handler(req, res) {
         name: 'Yudi',
       },
     ],
-  };
+  }
   const options = {
     method: 'POST',
     headers: {
@@ -29,13 +27,13 @@ export default async function handler(req, res) {
       'api-key': process.env.API_KEY ?? 'lol',
     },
     body: JSON.stringify(payload),
-  };
-
-  const response = await fetch(url, options);
-  if (!response.ok) {
-    res.json({ success: false });
-    return;
   }
 
-  res.json({ success: true });
+  const response = await fetch(url, options)
+  if (!response.ok) {
+    res.json({ success: false })
+    return
+  }
+
+  res.json({ success: true })
 }

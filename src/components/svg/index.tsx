@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { SVGProps } from 'react'
 
-export function IntroBg(props) {
+export function IntroBg(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width={731}
@@ -45,10 +45,10 @@ export function IntroBg(props) {
         fill="#8985A8"
       />
     </svg>
-  );
+  )
 }
 
-export function MyToolsIllustration(props) {
+export function MyToolsIllustration(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width={568}
@@ -162,10 +162,10 @@ export function MyToolsIllustration(props) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
-export function ContactIllustration(props) {
+export function ContactIllustration(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width={583}
@@ -267,10 +267,10 @@ export function ContactIllustration(props) {
         fill="#6C63FF"
       />
     </svg>
-  );
+  )
 }
 
-export function BottomBg(props) {
+export function BottomBg(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width={1440}
@@ -324,5 +324,5 @@ export function BottomBg(props) {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
