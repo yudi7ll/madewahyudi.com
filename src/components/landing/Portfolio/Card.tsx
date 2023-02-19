@@ -1,5 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
-import React, { useMemo } from 'react'
+import React from 'react'
 import './styles.scss'
 
 export interface CardProps {
@@ -15,11 +14,24 @@ const Card = ({
   sourceUrl,
   pageUrl,
 }: CardProps) => {
+  // const imgValue = 'fylo'
+  // const query = useStaticQuery<IGatsbyImageData>(graphql`
+  //   query ($imgValue: String = "fylo") {
+  //     allFile(filter: { name: { eq: $imgValue } }) {
+  //       nodes {
+  //         childImageSharp {
+  //           gatsbyImageData
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  // console.log(query)
   return (
     <div key={title} className="card">
       <div className="flex flex-col h-full w-full p-4">
         <h3 className="uppercase text-center mt-auto">{title}</h3>
-        <StaticImage src={`../../../images/portfolio/${img}`} alt={title} />
+        {/* <GatsbyImage image={getImage(img)} /> */}
       </div>
     </div>
   )

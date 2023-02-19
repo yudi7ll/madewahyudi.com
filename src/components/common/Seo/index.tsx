@@ -41,7 +41,7 @@ const SEO = ({ description, lang, meta = [], title }: SEOProps) => {
         },
         {
           property: 'og:image',
-          content: require('../../../images/favicon.png'),
+          content: require('/static/images/favicon.png'),
         },
         {
           property: 'og:description',

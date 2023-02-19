@@ -1,5 +1,5 @@
 import React from 'react'
-import Illustration from '../../../images/illustration.svg'
+import Illustration from '/static/images/illustration.svg'
 import { Sosmeds } from '../../../components/common'
 import './styles.scss'
 
