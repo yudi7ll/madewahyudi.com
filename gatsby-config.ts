@@ -3,6 +3,8 @@ import type { GatsbyConfig } from 'gatsby'
 const config: GatsbyConfig = {
   siteMetadata: {
     title: 'I Made Wahyudi',
+    description:
+      "I'm a web developer specialized in both Front-end and Back-end.",
     siteUrl: 'https://madewahyudi.com',
     author: 'Yudi',
   },
