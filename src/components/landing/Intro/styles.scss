@@ -22,15 +22,8 @@
     line-height: 150%;
   }
 
-  &__wrapper {
-    display: flex;
-  }
-
-  &__content {
-  }
-
   &__portfolio-btn {
-    a {
+    button {
       display: inline-block;
       background: transparent;
       text-transform: uppercase;
@@ -43,31 +36,31 @@
       color: #fff;
     }
 
-    a:hover {
+    button:hover {
       letter-spacing: 0.25em;
       color: $yellow;
       box-shadow: 0 0 45px $yellow;
       border-color: $yellow;
     }
 
-    a::before {
+    button::before {
       content: '';
       position: absolute;
       inset: 2px;
     }
 
-    a span {
+    button span {
       position: relative;
       z-index: 1;
     }
 
-    a i {
+    button i {
       position: absolute;
       inset: 0;
       display: block;
     }
 
-    a i::before {
+    button i::before {
       content: '';
       position: absolute;
       border: 2px solid $yellow;
@@ -80,12 +73,12 @@
       transition: 0.5s;
     }
 
-    a:hover i::before {
+    button:hover i::before {
       width: 20px;
       left: 20%;
     }
 
-    a i::after {
+    button i::after {
       content: '';
       position: absolute;
       border: 2px solid $yellow;
@@ -97,9 +90,13 @@
       transition: 0.5s;
     }
 
-    a:hover i::after {
+    button:hover i::after {
       width: 20px;
       left: 80%;
     }
   }
 }
+
+
+
+

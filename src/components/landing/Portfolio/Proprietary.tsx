@@ -23,11 +23,11 @@ const PortfolioCard = (
         target="_blank"
         rel="noreferrer"
       >
-        <StaticImage
-          src={`../../../images/portfolio/${img}`}
-          className="portfolio__img"
-          alt={title}
-        />
+        {/* <StaticImage */}
+        {/*   src={`../../../images/portfolio/${img}`} */}
+        {/*   className="portfolio__img" */}
+        {/*   alt={title} */}
+        {/* /> */}
       </a>
       <div className="portfolio__action d-flex align-items-center p-3 border-top text-center">
         <div className="col-4">

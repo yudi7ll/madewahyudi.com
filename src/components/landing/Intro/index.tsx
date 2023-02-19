@@ -1,25 +1,14 @@
 import React from 'react'
 import Illustration from '../../../images/illustration.svg'
-import { Link } from 'react-scroll'
-import { motion } from 'framer-motion'
 import { Sosmeds } from '../../../components/common'
 import './styles.scss'
 
 const Intro = () => (
-  <motion.div
-    className="intro"
-    id="yudi"
-    initial={{
-      opacity: 0,
-    }}
-    animate={{
-      opacity: 1,
-    }}
-  >
-    <div className="container">
-      <div className="intro__wrapper">
-        <div className="intro__content">
-          <p className="mb-1">Hi, my name is</p>
+  <div className="intro" id="yudi">
+    <div className="container px-32">
+      <div className="flex justify-center w-full gap-4">
+        <div className="py-12">
+          <p>Hi, my name is</p>
           <h1 className="intro__heading1">
             <span>I MADE WAH</span>
             <span className="color--accent">YUDI</span>
@@ -30,20 +19,28 @@ const Intro = () => (
             <span> and</span>
             <strong> back-end</strong>.
           </p>
-          <div className="intro__sosmed mt-4">{Sosmeds}</div>
-          <div className="intro__portfolio-btn">
-            <Link className="btn mt-4 px-5 py-2" to="portfolio">
-              <span>Portfolio</span>
+          <div className="my-4">{Sosmeds}</div>
+          <div className="intro__portfolio-btn cursor-pointer">
+            <button
+              type="button"
+              className="rounded text-sm"
+              onClick={() => {
+                document
+                  .querySelector('#portfolio')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
+              <span className="px-5">Portfolio</span>
               <i />
-            </Link>
+            </button>
           </div>
         </div>
-        <div className="intro__illustration">
+        <div className="shrink-0">
           <Illustration />
         </div>
       </div>
     </div>
-  </motion.div>
+  </div>
 )
 
 export default Intro

@@ -9,7 +9,6 @@
     "node": "18.x"
   },
   "dependencies": {
-    "framer-motion": "^9.0.1",
     "gatsby": "^5.5.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^3.5.0",
@@ -24,7 +23,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-scroll": "^1.8.7",
     "sass": "^1.58.0",
     "to-slug-case": "^1.0.0",
     "to-title-case": "^1.0.0",
@@ -35,17 +33,23 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/react-helmet": "^6.1.6",
-    "@types/react-scroll": "^1.8.6",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.33.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "gatsby-plugin-eslint": "^4.0.3",
-    "prettier": "2.8.3"
+    "gatsby-plugin-postcss": "^6.5.0",
+    "postcss": "^8.4.21",
+    "prettier": "2.8.3",
+    "tailwindcss": "^3.2.4"
   },
   "keywords": [
-    "gatsby"
+    "yudi",
+    "yudi7ll",
+    "madewahyudi",
+    "madewahyudi.com"
   ],
   "license": "0BSD",
   "scripts": {

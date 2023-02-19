@@ -14,6 +14,7 @@ const config: GatsbyConfig = {
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-react-svg',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -29,6 +30,14 @@ const config: GatsbyConfig = {
         path: './src/images/',
       },
       __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'portfolio',
+        path: './src/images/portfolio/',
+      },
+      __key: 'portfolio',
     },
   ],
 }
