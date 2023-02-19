@@ -1,10 +1,8 @@
-{
-  "data": [
-    {
-      "title": "Fylo",
-      "img": "../../images/portfolio/fylo.jpg",
-      "pageUrl": "https://yudi7ll.github.io/fylo",
-      "sourceUrl": "https://github.com/yudi7ll/fylo"
-    }
-  ]
-}
+[
+  {
+    "title": "Fylo",
+    "img": "/static/images/portfolio/fylo.jpg",
+    "pageUrl": "https://yudi7ll.github.io/fylo",
+    "sourceUrl": "https://github.com/yudi7ll/fylo"
+  }
+]

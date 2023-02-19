@@ -1,10 +1,10 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const Head = () => {
+const Head = ({ title: propsTitle }: { title?: string }) => {
   const {
     site: {
-      siteMetadata: { title, description, author },
+      siteMetadata: { description, author, title: siteTitle },
     },
   } = useStaticQuery(
     graphql`
@@ -19,6 +19,8 @@ const Head = () => {
       }
     `
   )
+
+  const title = propsTitle || siteTitle
 
   return (
     <>

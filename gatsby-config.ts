@@ -17,15 +17,15 @@ const config: GatsbyConfig = {
     'gatsby-plugin-image',
     'gatsby-plugin-react-svg',
     'gatsby-plugin-postcss',
-    'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'static/images/favicon.png',
       },
     },
-    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-transformer-json',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -41,6 +41,14 @@ const config: GatsbyConfig = {
         path: 'static/images/portfolio/',
       },
       __key: 'portfolio',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'static',
+        path: 'static/',
+      },
+      __key: 'static',
     },
   ],
 }

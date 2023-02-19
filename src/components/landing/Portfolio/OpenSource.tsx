@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
-import Card, { CardProps } from './Card'
-import { data } from '../../../../static/opensource.json'
+import Card from './Card'
+import openSourceList from '../../../../static/opensource.json'
 
 // const OpenSourceList: CardProps[] = [
 //   {
@@ -58,6 +58,6 @@ import { data } from '../../../../static/opensource.json'
 //   },
 // ]
 
-const OpenSource = () => <>{data.map(Card)}</>
+const OpenSource = () => <>{openSourceList.map(Card)}</>
 
 export default memo(OpenSource)
