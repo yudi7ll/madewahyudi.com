@@ -1,6 +1,6 @@
 import Layout from './Layout'
-import Seo from './Seo'
+import Head from './Head'
 import SkillIcon from './SkillIcon'
 import Sosmeds from './Sosmeds'
 
-export { Layout, Seo, SkillIcon, Sosmeds }
+export { Layout, Head, SkillIcon, Sosmeds }

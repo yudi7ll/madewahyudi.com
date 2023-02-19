@@ -14,7 +14,6 @@ import { PageProps } from 'gatsby'
 
 const IndexPage: React.FC<PageProps> = (props) => (
   <Layout>
-    <Seo title="Yudi" />
     <Intro />
     <Portfolio {...props} />
     <MyTools />
