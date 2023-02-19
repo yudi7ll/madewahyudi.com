@@ -1,5 +1,4 @@
 import React from 'react'
-import { Layout, Seo } from '../components/common'
 import {
   Contact,
   Footer,
@@ -11,15 +10,19 @@ import {
 // global styles
 import '../components/styles/globals.scss'
 import { PageProps } from 'gatsby'
+import { Head } from '../components/common'
 
 const IndexPage: React.FC<PageProps> = (props) => (
-  <Layout>
-    <Intro />
-    <Portfolio {...props} />
-    <MyTools />
-    <Contact />
-    <Footer />
-  </Layout>
+  <>
+    <Head />
+    <main>
+      <Intro />
+      <Portfolio {...props} />
+      <MyTools />
+      <Contact />
+      <Footer />
+    </main>
+  </>
 )
 
 export default IndexPage
