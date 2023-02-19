@@ -1,40 +1,28 @@
+import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { IPortfolio } from '.'
 import './styles.scss'
 
-export interface CardProps {
-  title: string
-  img?: string
-  sourceUrl?: string
-  pageUrl?: string
-}
-
-const Card = ({
-  title,
-  img = 'under-construction.jpg',
-  sourceUrl,
-  pageUrl,
-}: CardProps) => {
-  // const imgValue = 'fylo'
-  // const query = useStaticQuery<IGatsbyImageData>(graphql`
-  //   query ($imgValue: String = "fylo") {
-  //     allFile(filter: { name: { eq: $imgValue } }) {
-  //       nodes {
-  //         childImageSharp {
-  //           gatsbyImageData
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-  // console.log(query)
-  return (
-    <div key={title} className="card">
-      <div className="flex flex-col h-full w-full p-4">
-        <h3 className="uppercase text-center mt-auto">{title}</h3>
-        {/* <GatsbyImage image={getImage(img)} /> */}
+const Card = ({ title, image, sourceUrl, pageUrl }: IPortfolio) => (
+  <a
+    key={title}
+    href={pageUrl}
+    target="_blank"
+    className="card rounded-lg"
+    rel="noreferrer"
+  >
+    <div className="flex flex-col h-full w-full relative">
+      <GatsbyImage
+        className="absolute inset-0 rounded-lg"
+        image={image.childImageSharp.gatsbyImageData}
+        alt={title}
+      />
+      <div className="card__overlay rounded-lg"></div>
+      <div className="mt-auto mb-4 z-[1] pointer-events-auto">
+        <p className="uppercase text-center text-lg font-semibold">{title}</p>
       </div>
     </div>
-  )
-}
+  </a>
+)
 
 export default Card

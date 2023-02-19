@@ -1,8 +1,27 @@
 import { PageProps } from 'gatsby'
+import { IGatsbyImageData } from 'gatsby-plugin-image'
 import React from 'react'
 import OpenSource from './OpenSource'
 import Proprietary from './Proprietary'
 import './styles.scss'
+
+export interface IPortfolio {
+  id: string
+  title: string
+  pageUrl?: string
+  sourceUrl: string
+  image: {
+    childImageSharp: {
+      gatsbyImageData: IGatsbyImageData
+    }
+  }
+}
+
+export interface IPortfolioGraphql {
+  allOpensourceJson: {
+    nodes: IPortfolio[]
+  }
+}
 
 const Portfolio: React.FC<PageProps> = (props) => {
   console.log(props)
@@ -13,7 +32,7 @@ const Portfolio: React.FC<PageProps> = (props) => {
           <span>check out my </span>
           <span className="color--accent">works</span>
         </h2>
-        <div className="flex flex-1 basis-[300px] mt-4">
+        <div className="flex flex-1 flex-wrap justify-center gap-4 mt-4">
           <OpenSource />
         </div>
       </div>
