@@ -42,7 +42,6 @@ const Head = () => {
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap"
         rel="stylesheet"
       />
-      {/* eslint-disable-next-line react/no-danger */}
       <div
         dangerouslySetInnerHTML={{
           __html: `
