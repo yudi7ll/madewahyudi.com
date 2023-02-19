@@ -1,15 +1,12 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-interface SEOProps {
-  description?: string
-  lang?: string
-  meta?: { [k: string]: string }[]
-  title: string
-}
-
-const Head = ({ description, lang, meta = [], title }: SEOProps) => {
-  const { site } = useStaticQuery(
+const Head = () => {
+  const {
+    site: {
+      siteMetadata: { title, description, author },
+    },
+  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -23,26 +20,23 @@ const Head = ({ description, lang, meta = [], title }: SEOProps) => {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-
   return (
     <>
+      <html lang="en" />
       <title>{title}</title>
-      <meta name="description" content={metaDescription} />
+      <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta
         property="og:image"
         content={require('/static/images/favicon.png')}
       />
-      <meta property="og:description" content={metaDescription} />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:creator" content={site.siteMetadata?.author || ''} />
+      <meta name="twitter:creator" content={author} />
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={metaDescription} />
-      {meta.map((props, i) => (
-        <meta key={i} {...props} />
-      ))}
+      <meta name="twitter:description" content={description} />
+
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap"
