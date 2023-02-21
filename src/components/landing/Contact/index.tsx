@@ -19,7 +19,6 @@ const ContactForm = () => {
         subject: `New message from ${document.location.host}`,
         message: message.current,
       }
-
       const res = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
@@ -34,7 +33,6 @@ const ContactForm = () => {
       }
 
       const result = await res.json()
-
       if (!result.success) {
         throw new Error()
       }
@@ -51,12 +49,14 @@ const ContactForm = () => {
   }
 
   return (
-    <>
-      <p className="contact__header">Like my work? please let me know.</p>
+    <div>
+      <p className="text-2xl font-bold mb-2">
+        Like my work? please let me know.
+      </p>
       <form onSubmit={submitHandler}>
-        <div className="mb-3">
+        <div className="mb-3 w-full">
           <input
-            className="form-control rounded-0"
+            className="form-input"
             disabled={isLoading}
             id="name-input"
             placeholder="Full Name"
@@ -67,19 +67,18 @@ const ContactForm = () => {
         </div>
         <div className="mb-3">
           <input
-            aria-describedby="emailHelp"
-            className="form-control rounded-0"
+            type="email"
+            className="form-input"
             disabled={isLoading}
             id="email-input"
             placeholder="Email"
             ref={email}
             required
-            type="email"
           />
         </div>
         <div className="mb-3">
           <textarea
-            className="form-control rounded-0"
+            className="form-input"
             disabled={isLoading}
             id="message-input"
             placeholder="Say hi..."
@@ -90,25 +89,21 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="text__sm btn bg--purple text-white py-2 px-3 rounded-0 fw-bold rounded-0"
+          className="text-sm rounded bg-y-purple text-white py-2 px-3 font-bold hover:opacity-90 transition duration-300 ease-in-out"
         >
           {isLoading ? 'Sending ...' : 'SEND MESSAGE'}
         </button>
       </form>
-    </>
+    </div>
   )
 }
 
 const Contact = () => (
-  <div className="contact" id="contact">
+  <div className="pt-40" id="contact">
     <div className="container">
-      <div className="row align-items-center">
-        <div className="col-lg-5">
-          <ContactForm />
-        </div>
-        <div className="col-lg-7">
-          <ContactIllustration className="w-100" />
-        </div>
+      <div className="flex justify-center items-center xl:space-x-12">
+        <ContactForm />
+        <ContactIllustration className="w-100" />
       </div>
     </div>
   </div>
