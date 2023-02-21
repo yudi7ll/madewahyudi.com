@@ -12,12 +12,12 @@ import { PageProps } from 'gatsby'
 import { Head } from '../components/common'
 import '../styles/globals.scss'
 
-const IndexPage: React.FC<PageProps> = (props) => (
+const IndexPage: React.FC<PageProps> = () => (
   <>
     <Head />
     <main>
       <Intro />
-      <Portfolio {...props} />
+      <Portfolio />
       <MyTools />
       <Contact />
       <Footer />
