@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { IAllOpenSourceJsonGraphql, IAllProprietaryJsonGraphql } from '.'
+import { IAllProprietaryJsonGraphql } from '.'
 import Card from './Card'
 
 const Proprietary = () => {
