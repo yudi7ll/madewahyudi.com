@@ -29,7 +29,8 @@
     z-index: 1;
 
     &:before {
-      background-image: url('/static/images/bottom-bg.svg');
+      content: '';
+      background-image: url('/images/bottom-bg.svg');
       background-repeat: no-repeat;
       background-size: cover;
       content: '';
