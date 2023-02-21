@@ -1,5 +1,3 @@
-@import '../../../styles/variable';
-
 .intro {
   background-image: linear-gradient(theme('colors.y-purple'), theme('colors.y-dark'));
   background-position: center;
@@ -63,7 +61,7 @@
     button i::before {
       content: '';
       position: absolute;
-      border: 2px solid $yellow;
+      border: 2px solid var(--color-yellow);
       width: 7px;
       height: 4px;
       top: -3.5px;
@@ -81,7 +79,7 @@
     button i::after {
       content: '';
       position: absolute;
-      border: 2px solid $yellow;
+      border: 2px solid var(--color-yellow);
       width: 7px;
       height: 4px;
       bottom: -3.5px;

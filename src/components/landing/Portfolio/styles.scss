@@ -1,5 +1,3 @@
-@import '../../../styles/variable';
-
 .card {
   $stroke: 7px;
 
@@ -19,7 +17,7 @@
   }
 
   &:hover {
-    box-shadow: 0 0 35px rgba($yellow, .4);
+    box-shadow: 0 0 35px rgba(var(--color-yellow), .4);
 
     &::before {
       opacity: 1;
@@ -32,7 +30,7 @@
     content: '';
     position: absolute;
     width: 30%;
-    background-image: linear-gradient(180deg, $yellow, $red);
+    background-image: linear-gradient(180deg, var(--color-yellow), var(--color-red));
     animation: rotBGimg 2s linear infinite;
     animation-play-state: paused;
     height: 180%;
