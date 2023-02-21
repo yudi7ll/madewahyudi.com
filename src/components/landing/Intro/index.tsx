@@ -19,7 +19,7 @@ const Intro = () => (
             <span> and</span>
             <strong> back-end</strong>.
           </p>
-          <div className="my-4 space-x-2">{Sosmeds}</div>
+          <div className="my-4 space-x-2 whitespace-nowrap">{Sosmeds}</div>
           <div className="portfolio-btn cursor-pointer">
             <button
               type="button"
