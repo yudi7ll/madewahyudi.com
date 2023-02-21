@@ -34,9 +34,9 @@ const Portfolio: React.FC<PageProps> = (props) => {
   return (
     <div className="mt-36" id="portfolio">
       <div className="container">
-        <h2 className="text__header text-center">
+        <h2 className="text-header text-center uppercase">
           <span>check out my </span>
-          <span className="color--accent">works</span>
+          <span className="text-y-accent">works</span>
         </h2>
         <div className="flex flex-1 flex-wrap justify-center gap-4 mt-4">
           <OpenSource />
@@ -44,8 +44,8 @@ const Portfolio: React.FC<PageProps> = (props) => {
       </div>
 
       <div className="container portfolio">
-        <h2 className="text__header text-center">
-          <span className="color--accent">proprietary </span>
+        <h2 className="text-header text-center uppercase">
+          <span className="text-y-accent">proprietary </span>
           project
         </h2>
         <small className="flex justify-center" style={{ opacity: 0.5 }}>

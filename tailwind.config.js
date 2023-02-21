@@ -14,6 +14,9 @@ module.exports = {
         'y-red': '#E71D36',
         'y-purple': '#321D48',
       },
+      fontSize: {
+        header: '40px',
+      },
     },
   },
   plugins: [],

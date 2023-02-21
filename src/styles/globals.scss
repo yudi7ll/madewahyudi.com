@@ -57,21 +57,21 @@ a {
   color: white !important;
 }
 
-.text {
-  &--dark { color: $dark; }
-  &--yellow { color: $yellow; }
-  &--blue { color: $blue; }
+// .text {
+//   &--dark { color: $dark; }
+//   &--yellow { color: $yellow; }
+//   &--blue { color: $blue; }
 
-  &__header {
-    font-size: 40px;
-    text-transform: uppercase;
+//   &__header {
+//     font-size: 40px;
+//     text-transform: uppercase;
 
-    &--smaller {
-      font-size: 32px;
-      text-transform: uppercase;
-    }
-  }
-}
+//     &--smaller {
+//       font-size: 32px;
+//       text-transform: uppercase;
+//     }
+//   }
+// }
 
 .bg {
   &--accent { background-color: $accent; }
