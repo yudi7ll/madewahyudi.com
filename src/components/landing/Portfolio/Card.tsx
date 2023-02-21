@@ -17,7 +17,7 @@ const Card = ({ title, image, sourceUrl, pageUrl }: IPortfolio) => (
         image={image.childImageSharp.gatsbyImageData}
         alt={title}
       />
-      <div className="card__overlay rounded-lg"></div>
+      <div className="card-overlay rounded-lg"></div>
       <div className="mt-auto mb-4 z-[1] pointer-events-auto">
         <p className="uppercase text-center text-lg font-semibold">{title}</p>
       </div>

@@ -40,7 +40,7 @@
     opacity: 0;
   }
 
-  &__overlay {
+  &-overlay {
     position: absolute;
     background-image: linear-gradient(to top, rgba(50,29,72,.8), rgba(0,0,0,0) 50%);
     inset: -1px;
