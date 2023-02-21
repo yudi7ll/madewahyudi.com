@@ -17,8 +17,14 @@ export interface IPortfolio {
   }
 }
 
-export interface IPortfolioGraphql {
+export interface IAllOpenSourceJsonGraphql {
   allOpensourceJson: {
+    nodes: IPortfolio[]
+  }
+}
+
+export interface IAllProprietaryJsonGraphql {
+  allProprietaryJson: {
     nodes: IPortfolio[]
   }
 }
@@ -42,13 +48,12 @@ const Portfolio: React.FC<PageProps> = (props) => {
           <span className="color--accent">proprietary </span>
           project
         </h2>
-        <small
-          className="d-flex justify-content-center"
-          style={{ opacity: 0.5 }}
-        >
+        <small className="flex justify-center" style={{ opacity: 0.5 }}>
           (( Under construction ))
         </small>
-        {/* <div className="row">{Proprietary}</div> */}
+        <div className="flex flex-1 flex-wrap justify-center gap-4 mt-4">
+          <Proprietary />
+        </div>
       </div>
     </div>
   )

@@ -3,9 +3,9 @@ import React from 'react'
 import { IPortfolio } from '.'
 import './styles.scss'
 
-const Card = ({ title, image, sourceUrl, pageUrl }: IPortfolio) => (
+const Card = ({ id, title, image, sourceUrl, pageUrl }: IPortfolio) => (
   <a
-    key={title}
+    key={id}
     href={pageUrl}
     target="_blank"
     className="card rounded-lg"

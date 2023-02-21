@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Chibi World",
+    "pageUrl": "https: //chibiworld.com",
+    "sourceUrl": "",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "BoxyGuild",
+    "pageUrl": "https: //boxyguild.com",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "E-Learning",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "Kriya Bali",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "UPTD",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "E-Arsip",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "SPPD",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "The Yogasari Seminyak",
+    "image": "./images/portfolio/under-construction.jpg"
+  },
+  {
+    "title": "Animal Lover Petshop",
+    "image": "./images/portfolio/animal-lover.png"
+  }
+]
