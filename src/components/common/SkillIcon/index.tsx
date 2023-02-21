@@ -18,7 +18,7 @@ import {
 
 const RenderIcon = ({ Icon, style }: { Icon: Icon; style?: CSSProperties }) => (
   <div
-    className="d-inline-block rounded-circle border shadow p-2 m-2"
+    className="inline-block rounded-full border shadow p-2 m-2"
     style={{
       backgroundColor: '#f2f2f2',
       overflow: 'hidden',
