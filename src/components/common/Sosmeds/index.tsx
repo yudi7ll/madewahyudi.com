@@ -11,14 +11,19 @@ import {
 
 const RenderSosmed = ({ Icon, to }: { Icon: Icon; to: string }) => (
   <a
-    className="sosmed"
+    className="inline-block"
     href={to}
     target="_blank"
     rel="noreferrer"
     key={to}
     title={to}
   >
-    <Icon className="sosmed__icon" fill="#fff" height="40px" width="40px" />
+    <Icon
+      className="transition duration-300 ease-in-out hover:transform hover:scale-125 hover:rotate-[-360deg]"
+      fill="#fff"
+      height="40px"
+      width="40px"
+    />
   </a>
 )
 

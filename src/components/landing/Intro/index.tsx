@@ -4,23 +4,23 @@ import { Sosmeds } from '../../../components/common'
 import './styles.scss'
 
 const Intro = () => (
-  <div className="intro" id="yudi">
+  <div className="intro relative pt-24" id="yudi">
     <div className="container px-32">
       <div className="flex justify-center w-full gap-4">
         <div className="py-12">
           <p>Hi, my name is</p>
-          <h1 className="intro__heading1">
+          <h1 className="text-6xl leading-[120%]">
             <span>I MADE WAH</span>
-            <span className="color--accent">YUDI</span>
+            <span className="text-y-accent">YUDI</span>
           </h1>
-          <p className="intro__description">
+          <p>
             <span>I&apos;m a web developer specialized in both</span>
             <strong> front-end</strong>
             <span> and</span>
             <strong> back-end</strong>.
           </p>
-          <div className="my-4">{Sosmeds}</div>
-          <div className="intro__portfolio-btn cursor-pointer">
+          <div className="my-4 space-x-2">{Sosmeds}</div>
+          <div className="portfolio-btn cursor-pointer">
             <button
               type="button"
               className="rounded text-sm"
