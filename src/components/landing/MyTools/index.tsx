@@ -1,10 +1,9 @@
 import React from 'react'
 import { SkillIcon } from '../../../components/common'
 import { MyToolsIllustration } from '../../../components/svg'
-import './styles.scss'
 
 const MyTools = () => (
-  <div className="mytools" id="tools">
+  <div className="mt-40" id="tools">
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg-7">
