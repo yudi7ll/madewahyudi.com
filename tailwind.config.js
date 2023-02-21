@@ -3,16 +3,24 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,jsx,ts,tsx}',
     './src/components/**/*.{js,jsx,ts,tsx}',
+    './src/styles/*.scss',
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
+      fontFamily: {
+        Anton: ['Anton', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
+      },
       colors: {
-        'y-accent': '#FF9F1C',
-        'y-yellow': '#FF9F1C',
-        'y-blue': '#113A7D',
-        'y-dark': '#011627',
-        'y-red': '#E71D36',
-        'y-purple': '#321D48',
+        'y-accent': 'var(--color-accent)',
+        'y-yellow': 'var(--color-yellow)',
+        'y-blue': 'var(--color-blue)',
+        'y-dark': 'var(--color-dark)',
+        'y-red': 'var(--color-red)',
+        'y-purple': 'var(--color-purple)',
       },
       fontSize: {
         header: '40px',

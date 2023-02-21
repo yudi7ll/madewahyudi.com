@@ -1,7 +1,7 @@
 @import '../../../styles/variable';
 
 .intro {
-  background-image: linear-gradient($purple, $dark);
+  background-image: linear-gradient(theme('colors.y-purple'), theme('colors.y-dark'));
   background-position: center;
   background-size: cover;
   min-height: 300px;
@@ -38,9 +38,9 @@
 
     button:hover {
       letter-spacing: 0.25em;
-      color: $yellow;
-      box-shadow: 0 0 45px $yellow;
-      border-color: $yellow;
+      color: theme('colors.y-yellow');
+      box-shadow: 0 0 45px theme('colors.y-yellow');
+      border-color: theme('colors.y-yellow');
     }
 
     button::before {
