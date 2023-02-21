@@ -53,3 +53,27 @@
     }
   }
 }
+
+
+.circ {
+  &-1::before {
+    content: '';
+    background-image: url('/images/circle-1.svg');
+    position: absolute;
+    width: 734px;
+    height: 347px;
+    left: 0;
+  }
+
+  &-2::before {
+    content: '';
+    position: absolute;
+    background-image: url('/images/circle-2.svg');
+    opacity: .5;
+    width: 111px;
+    height: 111px;
+    right: -1.75rem;
+    top: -1.75rem;
+    z-index: -1;
+  }
+}

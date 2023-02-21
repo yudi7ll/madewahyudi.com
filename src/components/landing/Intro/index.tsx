@@ -4,14 +4,16 @@ import { Sosmeds } from '../../../components/common'
 import './styles.scss'
 
 const Intro = () => (
-  <div className="intro relative pt-24" id="yudi">
+  <div className="intro relative pt-24 z-20" id="yudi">
     <div className="container px-32">
       <div className="flex justify-center w-full gap-4">
         <div className="py-12">
           <p>Hi, my name is</p>
           <h1 className="text-6xl leading-[120%]">
             <span>I MADE WAH</span>
-            <span className="text-y-accent">YUDI</span>
+            <span className="text-y-accent relative circ-2">
+              <span>YUDI</span>
+            </span>
           </h1>
           <p>
             <span>I&apos;m a web developer specialized in both</span>
