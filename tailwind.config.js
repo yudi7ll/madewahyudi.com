@@ -1,9 +1,3 @@
-const BLUE = '#113A7D'
-const DARK = '#011627'
-const PURPLE = '#321D48'
-const RED = '#E71D36'
-const YELLOW = '#FF9F1C'
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'y-accent': YELLOW,
-        'y-yellow': YELLOW,
-        'y-blue': BLUE,
-        'y-dark': DARK,
-        'y-red': RED,
-        'y-purple': PURPLE,
+        'y-accent': '#FF9F1C',
+        'y-yellow': '#FF9F1C',
+        'y-blue': '#113A7D',
+        'y-dark': '#011627',
+        'y-red': '#E71D36',
+        'y-purple': '#321D48',
       },
     },
   },
