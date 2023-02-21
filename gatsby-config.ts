@@ -29,22 +29,6 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: 'static/images/',
-      },
-      __key: 'images',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'portfolio',
-        path: 'static/images/portfolio/',
-      },
-      __key: 'portfolio',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'static',
         path: 'static/',
       },
