@@ -49,7 +49,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="px-4">
+    <div className="px-4 mt-8 lg:mt-40">
       <p className="text-2xl font-bold mb-2">
         Like my work? please let me know.
       </p>
