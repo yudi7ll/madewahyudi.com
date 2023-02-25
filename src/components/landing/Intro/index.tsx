@@ -7,7 +7,7 @@ const Intro = () => (
   <div className="intro relative pt-24 z-20" id="yudi">
     <div className="container px-4 xl:px-32">
       <div className="flex justify-start w-full xl:gap-x-12 overflow-visible">
-        <div className="py-12 px-4 lg:px-0 lg:min-w-fit">
+        <div className="py-12 lg:min-w-fit">
           <p>Hi, my name is</p>
           <h1 className="text-6xl leading-[120%]">
             <span>I MADE </span>
@@ -20,9 +20,9 @@ const Intro = () => (
           </h1>
           <p className="max-w-sm">
             <span>I&apos;m a web developer specialized in both</span>
-            <strong> front-end</strong>
+            <strong className="whitespace-nowrap"> front-end</strong>
             <span> and</span>
-            <strong> back-end</strong>.
+            <strong className="whitespace-nowrap"> back-end</strong>.
           </p>
           <div className="my-4 space-x-2 whitespace-nowrap">{Sosmeds}</div>
           <div className="portfolio-btn cursor-pointer inline-block">

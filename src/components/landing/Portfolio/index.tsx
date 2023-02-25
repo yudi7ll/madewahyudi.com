@@ -35,7 +35,7 @@ const Grid = ({ children }: HTMLAttributes<HTMLDivElement>) => (
 )
 
 const Portfolio = () => (
-  <div className="mt-52" id="portfolio">
+  <div className="mt-52 px-4" id="portfolio">
     <div className="container">
       <h2 className="text-header text-center uppercase">
         <span>check out my </span>
