@@ -43,7 +43,7 @@
     "gatsby-plugin-eslint": "^4.0.3",
     "gatsby-plugin-postcss": "^6.5.0",
     "postcss": "^8.4.21",
-    "prettier": "2.8.3",
+    "prettier": "^2.8.4",
     "tailwindcss": "^3.2.4"
   },
   "keywords": [
