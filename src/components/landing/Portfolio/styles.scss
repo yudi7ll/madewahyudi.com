@@ -1,57 +1,50 @@
-.card {
-  $stroke: 7px;
+@import 'components/styles/_variable';
 
-  width: 365px;
-  height: 250px;
-  background: theme('colors.y-purple');
-  position: relative;
-  display: flex;
-  place-content: center;
-  place-items: center;
-  overflow: hidden;
-  padding: $stroke;
-  transition: all .5s ease-in-out;
+.portfolio {
+  padding-top: 5em;
 
-  & * {
-    color: white;
-  }
+  &__card {
+    overflow: hidden;
+    transition: .3s ease-in-out;
 
-  &:hover {
-    box-shadow: 0 0 35px rgba(var(--color-yellow), .4);
-
-    &::before {
-      opacity: 1;
-      animation-play-state: running;
-      transition: opacity .5s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 8rem rgba($color: $yellow, $alpha: 0.3);
     }
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 30%;
-    background-image: linear-gradient(180deg, var(--color-yellow), var(--color-red));
-    animation: rotBGimg 2s linear infinite;
-    animation-play-state: paused;
-    height: 180%;
-    transition: opacity .5s ease-in-out;
-    opacity: 0;
+  &__head {
+    background-image: linear-gradient(to right, $purple, #26024C);
+    display: block;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
   }
 
-  &-overlay {
-    position: absolute;
-    background-image: linear-gradient(to top, rgba(50,29,72,.8), rgba(0,0,0,0) 50%);
-    inset: -1px;
-    pointer-events: none;
+  &__img {
+    height: 255px;
+    transition: .5s ease-in-out;
+
+    &:hover {
+      object-fit: contain !important;
+      transform: scale(1.1);
+    }
   }
 
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
+  &__img-link {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: underline;
+      transition: .2s;
     }
 
-    to {
-      transform: rotate(360deg);
+    &--disabled {
+      opacity: .3;
     }
   }
 }
