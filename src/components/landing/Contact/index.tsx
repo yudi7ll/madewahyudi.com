@@ -1,23 +1,30 @@
-import React, { FormEvent, useRef, useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import { ContactIllustration } from '../../../components/svg'
 import './styles.scss'
 
 const ContactForm = () => {
-  const name = useRef(null)
-  const email = useRef(null)
-  const message = useRef(null)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+
+  const resetForm = () => {
+    setName('')
+    setEmail('')
+    setMessage('')
+  }
 
   const submitHandler = async (e: FormEvent<HTMLFormElement>) => {
     try {
       e.preventDefault()
       setIsLoading(true)
+      console.log(name, email, message)
 
       const body = {
-        name: name.current,
-        email: email.current,
+        name,
+        email,
         subject: `New message from ${document.location.host}`,
-        message: message.current,
+        message,
       }
       const res = await fetch('/api/send-email', {
         method: 'POST',
@@ -38,10 +45,9 @@ const ContactForm = () => {
       }
 
       alert({ message: 'Your message has been sent.' })
-      name.current = null
-      email.current = null
-      message.current = null
-    } catch (_) {
+      resetForm()
+    } catch (e) {
+      console.error(e)
       alert('Failed to send your message. Try again later')
     } finally {
       setIsLoading(false)
@@ -60,7 +66,8 @@ const ContactForm = () => {
             disabled={isLoading}
             id="name-input"
             placeholder="Full Name"
-            ref={name}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             type="text"
             required
           />
@@ -72,7 +79,8 @@ const ContactForm = () => {
             disabled={isLoading}
             id="email-input"
             placeholder="Email"
-            ref={email}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
@@ -82,7 +90,8 @@ const ContactForm = () => {
             disabled={isLoading}
             id="message-input"
             placeholder="Say hi..."
-            ref={message}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             required
             rows={5}
           />

@@ -1,12 +1,23 @@
 import fetch from 'node-fetch'
+import { GatsbyFunctionRequest, GatsbyFunctionResponse } from 'gatsby'
 
-export default async function handler(req: any, res: any) {
+interface ContactBody {
+  name: string
+  subject: string
+  email: string
+  message: string
+}
+
+export default async function handler(
+  req: GatsbyFunctionRequest<ContactBody>,
+  res: GatsbyFunctionResponse
+) {
   if (req.method !== 'POST') {
     res.status(405).end()
     return
   }
 
-  const { name, email, subject, message } = req.body
+  const { name, subject, email, message } = req.body
   const url = 'https://api.sendinblue.com/v3/smtp/email'
   const payload = {
     sender: { name, email },
