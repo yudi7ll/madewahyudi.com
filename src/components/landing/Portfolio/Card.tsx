@@ -17,7 +17,7 @@ const Card = ({ id, title, image, pageUrl }: IPortfolio) => (
         alt={title}
       />
       <div className="card-overlay rounded-lg"></div>
-      <div className="mt-auto mb-4 z-[1] pointer-events-auto">
+      <div className="mt-auto mb-4 z-[1] pointer-events-auto absolute bottom-0 left-0 right-0">
         <p className="uppercase text-center text-lg font-semibold">{title}</p>
       </div>
     </div>

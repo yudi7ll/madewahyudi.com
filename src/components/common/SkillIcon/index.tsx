@@ -16,8 +16,12 @@ import {
   Icon,
 } from '../../../components/icons'
 
-const RenderIcon = ({ Icon, style }: { Icon: Icon; style?: CSSProperties }) => (
+const RenderIcon = (
+  { Icon, style }: { Icon: Icon; style?: CSSProperties },
+  index: number
+) => (
   <div
+    key={index}
     className="inline-block rounded-full border shadow p-2 m-2"
     style={{
       backgroundColor: '#f2f2f2',
