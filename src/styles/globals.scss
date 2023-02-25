@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-yellow: #FF9F1C;
+  --color-blue: #113A7D;
+  --color-dark: #011627;
+  --color-purple: #321D48;
+  --color-red: #E71D36;
+  --color-accent: var(--color-yellow);
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Anton, sans-serif;
+  }
+
+  html {
+    font-size: 1.1em;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  main {
+    background-color: var(--color-dark);
+    color: white;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      background-image: url('/images/bottom-bg.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      height: 2000px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+.circ {
+  &-1::before {
+    content: '';
+    background-image: url('/images/circle-1.svg');
+    position: absolute;
+    width: 734px;
+    height: 347px;
+    // TODO:
+  }
+
+  &-2::before {
+    content: '';
+    position: absolute;
+    background-image: url('/images/circle-2.svg');
+    opacity: .5;
+    width: 111px;
+    height: 111px;
+    right: -1.75rem;
+    top: -1.75rem;
+    z-index: -1;
+  }
+}

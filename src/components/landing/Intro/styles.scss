@@ -1,98 +1,80 @@
-@import 'components/styles/_variable';
-
 .intro {
-  background-image: linear-gradient($purple, $dark);
+  background-image: linear-gradient(var(--color-purple), var(--color-dark));
   background-position: center;
   background-size: cover;
   min-height: 300px;
-  padding-top: 6rem;
-  position: relative;
+}
 
-  &__heading1 {
-    color: white;
-    font-family: Anton, sans-serif;
-    font-size: 3.5em;
-    line-height: 120%;
-    margin-bottom: 1rem;
+.portfolio-btn {
+  button {
+    display: inline-block;
+    background: transparent;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 17px;
+    border: 1px solid #eaeaea;
+    color: #fff;
   }
 
-  &__description {
-    color: white;
-    line-height: 150%;
+  button:hover {
+    letter-spacing: 0.25em;
+    color: var(--color-yellow);
+    box-shadow: 0 0 45px var(--color-yellow);
+    border-color: var(--color-yellow);
   }
 
-  &__portfolio-btn {
-    a {
-      display: inline-block;
-      background: transparent;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding: 10px 30px;
-      transition: 0.5s;
-      position: relative;
-      font-size: 17px;
-      border: 1px solid #eaeaea;
-      color: #fff;
-    }
+  button::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+  }
 
-    a:hover {
-      letter-spacing: 0.25em;
-      color: $yellow;
-      box-shadow: 0 0 45px $yellow;
-      border-color: $yellow;
-    }
+  button span {
+    position: relative;
+    z-index: 1;
+  }
 
-    a::before {
-      content: '';
-      position: absolute;
-      inset: 2px;
-    }
+  button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
 
-    a span {
-      position: relative;
-      z-index: 1;
-    }
+  button i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--color-yellow);
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
 
-    a i {
-      position: absolute;
-      inset: 0;
-      display: block;
-    }
+  button:hover i::before {
+    width: 20px;
+    left: 20%;
+  }
 
-    a i::before {
-      content: '';
-      position: absolute;
-      border: 2px solid $yellow;
-      width: 7px;
-      height: 4px;
-      top: -3.5px;
-      left: 80%;
-      background: #222222;
-      transform: translateX(-50%);
-      transition: 0.5s;
-    }
+  button i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--color-yellow);
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
 
-    a:hover i::before {
-      width: 20px;
-      left: 20%;
-    }
-
-    a i::after {
-      content: '';
-      position: absolute;
-      border: 2px solid $yellow;
-      width: 7px;
-      height: 4px;
-      bottom: -3.5px;
-      left: 20%;
-      transform: translateX(-50%);
-      transition: 0.5s;
-    }
-
-    a:hover i::after {
-      width: 20px;
-      left: 80%;
-    }
+  button:hover i::after {
+    width: 20px;
+    left: 80%;
   }
 }
