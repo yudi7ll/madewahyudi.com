@@ -5,24 +5,27 @@ import './styles.scss'
 
 const Intro = () => (
   <div className="intro relative pt-24 z-20" id="yudi">
-    <div className="container px-32">
-      <div className="flex justify-center w-full gap-4">
-        <div className="py-12">
+    <div className="container px-4 xl:px-32">
+      <div className="flex justify-start w-full xl:gap-x-12 overflow-visible">
+        <div className="py-12 px-4 lg:px-0 lg:min-w-fit">
           <p>Hi, my name is</p>
           <h1 className="text-6xl leading-[120%]">
-            <span>I MADE WAH</span>
-            <span className="text-y-accent relative circ-2">
-              <span>YUDI</span>
+            <span>I MADE </span>
+            <span className="whitespace-nowrap">
+              WAH
+              <span className="text-y-accent relative circ-2">
+                <span>YUDI</span>
+              </span>
             </span>
           </h1>
-          <p>
+          <p className="max-w-sm">
             <span>I&apos;m a web developer specialized in both</span>
             <strong> front-end</strong>
             <span> and</span>
             <strong> back-end</strong>.
           </p>
           <div className="my-4 space-x-2 whitespace-nowrap">{Sosmeds}</div>
-          <div className="portfolio-btn cursor-pointer">
+          <div className="portfolio-btn cursor-pointer inline-block">
             <button
               type="button"
               className="rounded text-sm"
@@ -37,7 +40,7 @@ const Intro = () => (
             </button>
           </div>
         </div>
-        <div className="shrink-0">
+        <div className="hidden lg:block">
           <Illustration />
         </div>
       </div>

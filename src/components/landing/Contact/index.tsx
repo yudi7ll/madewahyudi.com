@@ -101,7 +101,7 @@ const ContactForm = () => {
 const Contact = () => (
   <div className="pt-40" id="contact">
     <div className="container">
-      <div className="flex justify-center items-center xl:space-x-12">
+      <div className="flex flex-wrap justify-center items-center xl:space-x-12">
         <ContactForm />
         <ContactIllustration className="w-100" />
       </div>
