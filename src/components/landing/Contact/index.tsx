@@ -44,7 +44,7 @@ const ContactForm = () => {
         throw new Error()
       }
 
-      alert({ message: 'Your message has been sent.' })
+      alert('Your message has been sent.')
       resetForm()
     } catch (e) {
       console.error(e)
