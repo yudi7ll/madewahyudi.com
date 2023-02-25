@@ -1,9 +1,8 @@
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { IPortfolio } from '.'
-import './styles.scss'
 
-const Card = ({ id, title, image, sourceUrl, pageUrl }: IPortfolio) => (
+const Card = ({ id, title, image, pageUrl }: IPortfolio) => (
   <a
     key={id}
     href={pageUrl}

@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles.scss'
 import {
   TelegramIcon,
   GithubIcon,
@@ -8,6 +7,7 @@ import {
   LinkedInIcon,
   Icon,
 } from '../../../components/icons'
+import './styles.scss'
 
 const RenderSosmed = ({ Icon, to }: { Icon: Icon; to: string }) => (
   <a

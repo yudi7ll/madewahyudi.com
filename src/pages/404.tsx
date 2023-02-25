@@ -1,6 +1,5 @@
 import React from 'react'
 import { Head } from '../components/common'
-import '../styles/globals.scss'
 
 const NotFound = () => (
   <>
