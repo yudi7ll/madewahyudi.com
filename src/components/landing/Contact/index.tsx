@@ -89,7 +89,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          className="text-sm rounded bg-y-purple text-white py-2 px-3 font-bold hover:opacity-90 transition duration-300 ease-in-out"
+          className="text-sm rounded bg-[#2D2647] text-white py-2 px-3 font-bold hover:opacity-80 transition duration-300 ease-in-out"
         >
           {isLoading ? 'Sending ...' : 'SEND MESSAGE'}
         </button>
