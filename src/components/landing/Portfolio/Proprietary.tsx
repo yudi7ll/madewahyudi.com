@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { IAllProprietaryJsonGraphql } from '.'
 import Card from './Card'
@@ -27,4 +27,4 @@ const Proprietary = () => {
   return <>{proprietaryList.map(Card)}</>
 }
 
-export default memo(Proprietary)
+export default Proprietary

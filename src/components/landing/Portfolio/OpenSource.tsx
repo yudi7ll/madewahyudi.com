@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import React, { memo } from 'react'
+import React from 'react'
 import { IAllOpenSourceJsonGraphql } from '.'
 import Card from './Card'
 
@@ -27,4 +27,4 @@ const OpenSource = () => {
   return <>{openSourceList.map(Card)}</>
 }
 
-export default memo(OpenSource)
+export default OpenSource
