@@ -16,6 +16,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-react-svg',
