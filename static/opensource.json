@@ -55,5 +55,11 @@
     "sourceUrl": "https://github.com/yudi7ll/url-shortener",
     "pageUrl": "https://goner.my.id",
     "image": "./images/portfolio/goner.png"
+  },
+  {
+    "title": "KBBI",
+    "sourceUrl": "https://github.com/yudi7ll/kbbi",
+    "pageUrl": "https://kamusbesar.my.id",
+    "image": "./images/portfolio/under-construction.jpg"
   }
 ]
