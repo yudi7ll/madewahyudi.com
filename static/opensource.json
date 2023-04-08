@@ -36,12 +36,6 @@
     "image": "./images/portfolio/todo-app-main.jpg"
   },
   {
-    "title": "IP Address Tracker",
-    "sourceUrl": "https://github.com/yudi7ll/ip-address-tracker",
-    "pageUrl": "https://addr.netlify.app",
-    "image": "./images/portfolio/ip-tracker.jpg"
-  },
-  {
     "title": "Grep Voodh",
     "image": "./images/portfolio/under-construction.jpg"
   },
