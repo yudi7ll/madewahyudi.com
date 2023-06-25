@@ -12,12 +12,6 @@
     "image": "./images/portfolio/admin-backpackbuddy.png"
   },
   {
-    "title": "DashF",
-    "sourceUrl": "https://github.com/yudi7ll/dash-f",
-    "pageUrl": "https://dash-f.madewahyudi.com",
-    "image": "./images/portfolio/dashf.jpg"
-  },
-  {
     "title": "Fylo",
     "sourceUrl": "https://github.com/yudi7ll/fylo",
     "pageUrl": "https://yudi7ll.github.io/fylo",
@@ -28,26 +22,5 @@
     "sourceUrl": "https://github.com/yudi7ll/easybank",
     "pageUrl": "https://yudi7ll.github.io/easybank",
     "image": "./images/portfolio/easybank.jpg"
-  },
-  {
-    "title": "Grep Voodh",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "E-Quizz",
-    "sourceUrl": "https://github.com/yudi7ll/equizz",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "Url Shortener",
-    "sourceUrl": "https://github.com/yudi7ll/url-shortener",
-    "pageUrl": "https://goner.my.id",
-    "image": "./images/portfolio/goner.png"
-  },
-  {
-    "title": "KBBI",
-    "sourceUrl": "https://github.com/yudi7ll/kbbi",
-    "pageUrl": "https://kamusbesar.my.id",
-    "image": "./images/portfolio/under-construction.jpg"
   }
 ]

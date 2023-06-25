@@ -9,33 +9,5 @@
     "title": "BoxyGuild",
     "pageUrl": "https://boxyguild.web.app",
     "image": "./images/portfolio/boxyguild.jpg"
-  },
-  {
-    "title": "E-Learning",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "Kriya Bali",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "UPTD",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "E-Arsip",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "SPPD",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "The Yogasari Seminyak",
-    "image": "./images/portfolio/under-construction.jpg"
-  },
-  {
-    "title": "Animal Lover Petshop",
-    "image": "./images/portfolio/under-construction.jpg"
   }
 ]
