@@ -11,8 +11,8 @@ const Footer = () => (
           <a href="https://github.com/yudi7ll" target="_blank" rel="noreferrer">
             Yudi
           </a>
-          <CircleIcon className="mx-1" height="10px" width="10px" fill="#fff" />
-          <span>Under development</span>
+          {/* <CircleIcon className="mx-1" height="10px" width="10px" fill="#fff" /> */}
+          {/* <span>Under development</span> */}
         </small>
       </div>
     </div>

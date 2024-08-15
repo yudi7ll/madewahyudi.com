@@ -1,5 +1,11 @@
 [
   {
+    "title": "Wallex",
+    "pageUrl": "https://admin.wallex.asia",
+    "sourceUrl": "",
+    "image": "./images/portfolio/wallex.png"
+  },
+  {
     "title": "Chibi World",
     "pageUrl": "https://chibiworld.com",
     "sourceUrl": "",

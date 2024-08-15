@@ -52,7 +52,7 @@ const Portfolio = () => (
         project
       </h2>
       <small className="flex justify-center" style={{ opacity: 0.5 }}>
-        (( Under construction ⚠ ))
+        (( Under development ⚠ ))
       </small>
       <Grid>
         <Proprietary />
