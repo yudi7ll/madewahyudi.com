@@ -3,17 +3,20 @@
     "title": "Wallex",
     "pageUrl": "https://admin.wallex.asia",
     "sourceUrl": "",
-    "image": "./images/portfolio/wallex.png"
+    "image": "./images/portfolio/wallex.png",
+    "year": 2023
   },
   {
     "title": "Chibi World",
     "pageUrl": "https://chibiworld.com",
     "sourceUrl": "",
-    "image": "./images/portfolio/chibiworld.png"
+    "image": "./images/portfolio/chibiworld.png",
+    "year": 2022
   },
   {
     "title": "BoxyGuild",
     "pageUrl": "https://boxyguild.web.app",
-    "image": "./images/portfolio/boxyguild.jpg"
+    "image": "./images/portfolio/boxyguild.jpg",
+    "year": 2022
   }
 ]

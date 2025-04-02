@@ -14,6 +14,7 @@ const Proprietary = () => {
           pageUrl
           sourceUrl
           title
+          year
           image {
             childImageSharp {
               gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)

@@ -3,24 +3,14 @@
     "title": "Backpackbuddy",
     "sourceUrl": "https://github.com/yudi7ll/backpackbuddy",
     "pageUrl": "https://backpackbuddy.madewahyudi.com",
-    "image": "./images/portfolio/backpackbuddy.jpg"
+    "image": "./images/portfolio/backpackbuddy.jpg",
+    "year": 2021
   },
   {
     "title": "Backpackbuddy Admin Panel",
     "sourceUrl": "https://github.com/yudi7ll/backpackbuddy-admin",
     "pageUrl": "https://admin-backpackbuddy.madewahyudi.com",
-    "image": "./images/portfolio/admin-backpackbuddy.png"
-  },
-  {
-    "title": "Fylo",
-    "sourceUrl": "https://github.com/yudi7ll/fylo",
-    "pageUrl": "https://yudi7ll.github.io/fylo",
-    "image": "./images/portfolio/fylo.jpg"
-  },
-  {
-    "title": "Easybank",
-    "sourceUrl": "https://github.com/yudi7ll/easybank",
-    "pageUrl": "https://yudi7ll.github.io/easybank",
-    "image": "./images/portfolio/easybank.jpg"
+    "image": "./images/portfolio/admin-backpackbuddy.png",
+    "year": 2021
   }
 ]

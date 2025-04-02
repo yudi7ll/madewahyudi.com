@@ -2,7 +2,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { IPortfolio } from '.'
 
-const Card = ({ id, title, image, pageUrl }: IPortfolio) => (
+const Card = ({ id, title, image, pageUrl, year }: IPortfolio) => (
   <a
     key={id}
     href={pageUrl}
@@ -19,6 +19,7 @@ const Card = ({ id, title, image, pageUrl }: IPortfolio) => (
       <div className="card-overlay z-[1] rounded-lg"></div>
       <div className="mt-auto mb-4 z-[2] pointer-events-auto absolute bottom-0 left-0 right-0">
         <p className="uppercase text-center text-lg font-semibold">{title}</p>
+        <p className="text-center text-sm">Worked on in {year}</p>
       </div>
     </div>
   </a>

@@ -9,6 +9,7 @@ export interface IPortfolio {
   title: string
   pageUrl?: string
   sourceUrl: string
+  year: number
   image: {
     childImageSharp: {
       gatsbyImageData: IGatsbyImageData
