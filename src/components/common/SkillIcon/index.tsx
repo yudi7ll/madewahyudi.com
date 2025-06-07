@@ -14,6 +14,7 @@ import {
   WordpressIcon,
   VimIcon,
   Icon,
+  TypescriptIcon,
 } from '../../../components/icons'
 
 const RenderIcon = (
@@ -37,7 +38,8 @@ const SkillIcon = (props: HTMLAttributes<HTMLDivElement>) => (
   <div {...props}>
     {[
       { Icon: LinuxIcon },
-      { Icon: JavascriptIcon, style: { backgroundColor: '#F7DF1E' } },
+      { Icon: JavascriptIcon, style: { backgroundColor: '#F7DF1E', borderColor: '#F7DF1E' } },
+      { Icon: TypescriptIcon, style: { backgroundColor: '#3178C6', borderColor: '#3178C6' } },
       { Icon: PhpIcon },
       { Icon: ReactIcon },
       { Icon: ReduxIcon },
