@@ -12,7 +12,7 @@ import { Head } from '../components/common'
 const IndexPage: React.FC<PageProps> = () => (
   <>
     <Head />
-    <main>
+    <main className="overflow-x-hidden">
       <Intro />
       <Portfolio />
       <MyTools />

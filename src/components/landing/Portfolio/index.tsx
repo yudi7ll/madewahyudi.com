@@ -2,6 +2,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 import React, { HTMLAttributes } from 'react'
 import OpenSource from './OpenSource'
 import Proprietary from './Proprietary'
+import { motion } from 'framer-motion'
 import './styles.scss'
 
 export interface IPortfolio {
@@ -38,23 +39,41 @@ const Grid = ({ children }: HTMLAttributes<HTMLDivElement>) => (
 const Portfolio = () => (
   <div className="mt-52 px-4" id="portfolio">
     <div className="container">
-      <h2 className="text-header text-center uppercase">
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-header text-center uppercase"
+      >
         <span>check out my </span>
         <span className="text-y-accent">works</span>
-      </h2>
+      </motion.h2>
       <Grid>
         <OpenSource />
       </Grid>
     </div>
 
     <div className="container mt-24">
-      <h2 className="text-header text-center uppercase">
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-header text-center uppercase"
+      >
         <span className="text-y-accent">proprietary </span>
         project
-      </h2>
-      <small className="flex justify-center" style={{ opacity: 0.5 }}>
+      </motion.h2>
+      <motion.small
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 0.5 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="flex justify-center"
+      >
         (( Under development ⚠ ))
-      </small>
+      </motion.small>
       <Grid>
         <Proprietary />
       </Grid>

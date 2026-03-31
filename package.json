@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource/anton": "^4.5.9",
     "@fontsource/roboto": "^4.5.8",
+    "framer-motion": "^12.38.0",
     "gatsby": "^5.5.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^3.5.0",

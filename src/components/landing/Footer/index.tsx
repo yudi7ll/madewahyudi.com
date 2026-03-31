@@ -1,8 +1,15 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { CircleIcon } from '../../icons'
 
 const Footer = () => (
-  <footer className="mt-40">
+  <motion.footer
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 1 }}
+    className="mt-40"
+  >
     <div className="container">
       <div className="text-center text-white py-4">
         <small className="text-xs flex items-center justify-center space-x-1">
@@ -16,7 +23,7 @@ const Footer = () => (
         </small>
       </div>
     </div>
-  </footer>
+  </motion.footer>
 )
 
 export default Footer

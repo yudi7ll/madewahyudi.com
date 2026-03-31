@@ -1,5 +1,6 @@
 import React, { FormEvent, useState } from 'react'
 import { ContactIllustration } from '../../../components/svg'
+import { motion } from 'framer-motion'
 import './styles.scss'
 
 const ContactForm = () => {
@@ -110,10 +111,16 @@ const ContactForm = () => {
 const Contact = () => (
   <div className="pt-40" id="contact">
     <div className="container">
-      <div className="flex flex-wrap justify-center items-center xl:space-x-12">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="flex flex-wrap justify-center items-center xl:space-x-12"
+      >
         <ContactForm />
         <ContactIllustration className="w-100" />
-      </div>
+      </motion.div>
     </div>
   </div>
 )

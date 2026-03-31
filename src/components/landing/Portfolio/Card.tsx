@@ -1,14 +1,19 @@
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { IPortfolio } from '.'
+import { motion } from 'framer-motion'
 
 const Card = ({ id, title, image, pageUrl, year }: IPortfolio) => (
-  <a
+  <motion.a
     key={id}
     href={pageUrl}
     target="_blank"
     className="card rounded-lg"
     rel="noreferrer"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, margin: '-50px' }}
+    transition={{ duration: 0.5, ease: 'easeOut' }}
   >
     <div className="flex flex-col flex-1 h-full w-full relative">
       <GatsbyImage
@@ -22,7 +27,7 @@ const Card = ({ id, title, image, pageUrl, year }: IPortfolio) => (
         <p className="text-center text-sm">Worked on in {year}</p>
       </div>
     </div>
-  </a>
+  </motion.a>
 )
 
 export default Card
