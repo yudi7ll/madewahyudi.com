@@ -12,7 +12,6 @@ const Proprietary = () => {
         nodes {
           id
           pageUrl
-          sourceUrl
           title
           year
           image {

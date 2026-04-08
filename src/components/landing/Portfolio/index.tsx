@@ -9,7 +9,7 @@ export interface IPortfolio {
   id: string
   title: string
   pageUrl?: string
-  sourceUrl: string
+  sourceUrl?: string
   year: number
   image: {
     childImageSharp: {
