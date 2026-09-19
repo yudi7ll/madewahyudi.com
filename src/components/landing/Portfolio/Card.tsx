@@ -33,7 +33,7 @@ const Card = ({ id, title, image, pageUrl, sourceUrl, year }: IPortfolio) => (
                 rel="noreferrer"
                 className="text-xs bg-white/20 hover:bg-white/30 backdrop-blur-sm px-3 py-1 rounded-full transition-colors border border-white/30"
               >
-                Live Demo
+                Live Website
               </a>
             )}
             {sourceUrl && (
