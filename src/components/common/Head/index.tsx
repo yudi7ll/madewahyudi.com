@@ -47,7 +47,7 @@ const Head = ({ title: propsTitle }: { title?: string }) => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-LNZQGS8EKR');
+          gtag('config', 'G-CV9K70HKB3');
           </script>
           `,
         }}
