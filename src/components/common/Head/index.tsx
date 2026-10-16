@@ -42,7 +42,7 @@ const Head = ({ title: propsTitle }: { title?: string }) => {
       <div
         dangerouslySetInnerHTML={{
           __html: `
-          <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-LNZQGS8EKR" />
+          <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-CV9K70HKB3" />
           <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
