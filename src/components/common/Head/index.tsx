@@ -43,13 +43,13 @@ const Head = ({ title: propsTitle }: { title?: string }) => {
         dangerouslySetInnerHTML={{
           __html: `
           <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-LNZQGS8EKR"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-31BFCP0BFX"></script>
             <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-LNZQGS8EKR');
+          gtag('config', 'G-31BFCP0BFX');
           </script>
           `,
         }}
