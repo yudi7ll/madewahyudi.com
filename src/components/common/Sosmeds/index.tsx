@@ -3,7 +3,7 @@ import {
   TelegramIcon,
   GithubIcon,
   InstagramIcon,
-  TwitterIcon,
+  ThreadsIcon,
   LinkedInIcon,
   Icon,
 } from '../../../components/icons'
@@ -41,8 +41,8 @@ const Sosmeds = [
     Icon: InstagramIcon,
   },
   {
-    to: 'https://twitter.com/yudi7ll',
-    Icon: TwitterIcon,
+    to: 'https://www.threads.com/@yudi7ll',
+    Icon: ThreadsIcon,
   },
   {
     to: 'https://www.linkedin.com/in/yudi7ll',
